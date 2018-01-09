@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="Tastiera_Fonetica.Intro"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tastiera_Fonetica"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Frame>
+        <Canvas Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+            <TextBlock x:Uid="welcome" Canvas.Left="100" Canvas.Top="100" FontSize="50" Style="{StaticResource BasicTextStyle}" Foreground="{StaticResource TestoEtichette}" Text="" TextWrapping="Wrap"/>
+                <!--Benvenuto nella tua tastiera fonetica-->
+            <TextBlock x:Uid="beforestarting" Canvas.Left="100" Canvas.Top="250" FontSize="25" Text="" TextWrapping="Wrap"/>
+                    <!--Prima di cominciare ci serve un informazione importante:-->
+            <TextBlock x:Uid="doesyoursystem" Canvas.Left="100" Canvas.Top="280" FontSize="25" Text="" TextWrapping="Wrap"/>
+                    <!--Il tuo sistema dispone di una tastiera fisica?-->
+            <Button x:ConnectionId='1' x:Name="btSi" x:Uid="btSi" Canvas.Left="100" Canvas.Top="330" FontSize="25" MinWidth="150"                    Content=""/>
+            <Button x:ConnectionId='2' x:Name="btNo" x:Uid="btNo" Canvas.Left="300" Canvas.Top="330" FontSize="25" MinWidth="150"                    Content=""/>
+            <TextBlock x:Uid="ifyouchange" Canvas.Left="100" Canvas.Top="480" FontSize="18" Text=""  TextWrapping="Wrap"/>
+                    <!--(Nel caso cambiassi idea l'opzione può essere modificata nel menù impostazioni)-->
+            <Button x:ConnectionId='3' x:Name="btWhatIs" x:Uid="whatis" Canvas.Left="100" Canvas.Top="700" FontSize="14" Style="{StaticResource btLink}" Content=""                       />
+                <!--Che cos'è una tastiera fisica-->
+            <Button x:ConnectionId='4' x:Name="btHowToGo" x:Uid="howtogo" Canvas.Left="100" Canvas.Top="730" FontSize="14" Style="{StaticResource btLink}" Content=""                        />
+                <!--Come accedere al menù impostazioni-->
+        </Canvas>
+    </Frame>
+</Page>
+

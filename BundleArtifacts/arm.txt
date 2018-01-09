@@ -1,0 +1,3 @@
+MainPackage=C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\ARM\Release\Tastiera Fonetica_1.1.0.14_Bundle\Tastiera Fonetica_1.1.0.14_ARM.appx
+SymbolPackage=C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\AppPackages\Tastiera Fonetica_1.1.0.14_Test\Tastiera Fonetica_1.1.0.14_ARM.appxsym
+ResourcePack=C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\ARM\Release\Tastiera Fonetica_1.1.0.14_Bundle\Tastiera Fonetica_1.1.0.14_language-it.appx

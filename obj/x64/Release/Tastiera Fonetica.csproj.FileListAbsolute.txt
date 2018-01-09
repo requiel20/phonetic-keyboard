@@ -1,0 +1,62 @@
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\x64\Release\App.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\x64\Release\Common\CustomStyles.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\x64\Release\Common\StandardStyles.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\x64\Release\Howtogo.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\x64\Release\Intro.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\x64\Release\Tastiera.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\x64\Release\usercontrol.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\x64\Release\Whatis.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\x64\Release\Tastiera Fonetica.xr.xml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\x64\Release\Tastiera Fonetica.exe
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\x64\Release\Tastiera Fonetica.pdb
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\x64\Release\resources.pri
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\x64\Release\AppxManifest.xml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\x64\Release\Tastiera Fonetica.build.appxrecipe
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\App.g.i.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\App.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Common\CustomStyles.g.i.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Common\CustomStyles.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Common\StandardStyles.g.i.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Common\StandardStyles.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Howtogo.g.i.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Howtogo.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Intro.g.i.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Intro.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Tastiera.g.i.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Tastiera.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\usercontrol.g.i.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\usercontrol.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Whatis.g.i.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Whatis.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\XamlTypeInfo.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\App.xaml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Common\CustomStyles.xaml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Common\StandardStyles.xaml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Howtogo.xaml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Intro.xaml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Tastiera.xaml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\usercontrol.xaml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Whatis.xaml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\App.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Common\CustomStyles.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Common\StandardStyles.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Howtogo.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Intro.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Tastiera.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\usercontrol.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Whatis.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\XamlSaveStateFile.xml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Tastiera Fonetica.exe
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\Tastiera Fonetica.pdb
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\priconfig.xml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\priconfig.xml.intermediate
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\layout.resfiles
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\layout.resfiles.intermediate
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\resources.resfiles
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\resources.resfiles.intermediate
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\pri.resfiles
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\pri.resfiles.intermediate
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\qualifiers.txt
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\qualifiers.txt.intermediate
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\x64\Release\ProjectArchitectures.txt

@@ -1,0 +1,1459 @@
+﻿<Page
+    x:Class="Tastiera_Fonetica.Tastiera"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tastiera_Fonetica"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!--AppBar-->
+    <Page.BottomAppBar>
+        <AppBar>
+            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" Grid.Column="1">
+                <Button x:ConnectionId='1' x:Name="btShowLab" x:Uid="btShowLab"                          Content="Nascondi le etichete"/>
+                <Button x:ConnectionId='2' x:Name="btShowBt" x:Uid="btShowBt"                         Content="Nascondi tutti i tasti" Margin="20,0,10,0"/>
+                <Rectangle Height="50" Width="2" Fill="LightGray" Margin="20,0,20,0"/>
+                <CheckBox x:ConnectionId='3' x:Name="cbPlay" x:Uid="cbPlay"  FontSize="18"  Margin="0,0,0,0" IsChecked="True"                                                       >Ascolta il fono alla pressione di ogni tasto</CheckBox>
+                <Rectangle Height="50" Width="2" Fill="LightGray" Margin="20,0,20,0"/>
+                <Button x:ConnectionId='4' x:Name="btPlay" Style="{StaticResource PlayAppBarButtonStyle}"                      />
+                <Button x:ConnectionId='5' x:Name="btStop" Style="{StaticResource StopAppBarButtonStyle}"                     />
+            </StackPanel>
+        </AppBar>
+    </Page.BottomAppBar>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <Canvas x:Name="myCanvas" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <!--Scelta colore popup-->
+            <Popup x:Name="popColori" IsOpen="False" Canvas.ZIndex="10" Canvas.Top="53" Canvas.Left="100">
+                <Border x:Name="brdColori" BorderBrush="White" Background="AliceBlue" BorderThickness="1" Padding="0">
+                    <Grid VerticalAlignment="Top" Margin="0,0,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Button x:ConnectionId='695' x:Name="btClBlack" Grid.Column="0" BorderThickness=".5" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Black" Height="35" Width="35" Margin="4,0,4,0"                        />
+                        <Button x:ConnectionId='696' x:Name="btClRed" Grid.Column="1" BorderThickness=".5" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Red" Height="35" Width="35" Margin="4,0,4,0"                       />
+                        <Button x:ConnectionId='697' x:Name="btClGreen" Grid.Column="2" BorderThickness=".5" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Green" Height="35" Width="35" Margin="4,0,4,0"                       />
+                        <Button x:ConnectionId='698' x:Name="btClBlue" Grid.Column="3" BorderThickness=".5" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Blue" Height="35" Width="35" Margin="4,0,4,0"                       />
+                        <Button x:ConnectionId='699' x:Name="btClPink" Grid.Column="0" Grid.Row="1" BorderThickness=".5" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Pink" Height="35" Width="35" Margin="4,0,4,0"                       />
+                        <Button x:ConnectionId='700' x:Name="btClDarkGray" Grid.Column="1" Grid.Row="1" BorderThickness=".5" HorizontalAlignment="Center" VerticalAlignment="Center" Background="DarkGray" Height="35" Width="35" Margin="4,0,4,0"                       />
+                        <Button x:ConnectionId='701' x:Name="btClYellow" Grid.Column="2" Grid.Row="1" BorderThickness=".5" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Yellow" Height="35" Width="35" Margin="4,0,4,0"                       />
+                        <Button x:ConnectionId='702' x:Name="btClAquamarine" Grid.Column="3" Grid.Row="1" BorderThickness=".5" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Aquamarine" Height="35" Width="35" Margin="4,0,4,0"                       />
+                    </Grid>
+                </Border>
+            </Popup>
+        </Canvas>
+            
+        <!--Media Element-->
+        <MediaElement x:Name="player" AudioCategory="ForegroundOnlyMedia"/>
+
+        <!--intestazione-->
+        <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}" Height="58" Canvas.ZIndex="-81">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <!--pannelloComandiTesto-->
+            <StackPanel x:Name="spComandiTesto" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:ConnectionId='686' x:Name="btGrassetto"                           Padding="2" FontSize="20" BorderThickness="5" BorderBrush="Transparent">
+                    <TextBlock Text="B" FontWeight="Bold"/>
+                </Button>
+                <Button x:ConnectionId='687' x:Name="btCorisvo"                         Padding="2" FontSize="20" BorderThickness="5" BorderBrush="Transparent">
+                    <TextBlock Text="i" FontStyle="Italic"/>
+                </Button>
+                <Button x:ConnectionId='688' x:Name="btSottolineato"                              Padding="2" FontSize="20" BorderThickness="5" BorderBrush="Transparent">
+                    <TextBlock>
+                        <Underline >
+                            <Run Text="s"/>
+                        </Underline>
+                    </TextBlock>
+                </Button>
+                <Button x:ConnectionId='689' x:Name="btColoreFont"                            Padding="0" BorderThickness="5" BorderBrush="Transparent" IsTabStop="False">
+                    <StackPanel>
+                        <Image Source="Assets/coloreFont.png" Height="30" Width="30"/>
+                        <TextBlock x:Uid="tbColoreFont" FontSize="7" Text="Colore font" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button x:ConnectionId='690' x:Name="btCopy"                      Padding="0" BorderThickness="5" BorderBrush="Transparent">
+                    <StackPanel>
+                        <Image Source="Assets/copy.png" Height="30" Width="30"/>
+                        <TextBlock x:Uid="tbCopy" FontSize="7" Text="Copia" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button x:ConnectionId='691' x:Name="btCut"                     Padding="0" BorderThickness="5" BorderBrush="Transparent">
+                    <StackPanel>
+                        <Image Source="Assets/cut.png" Height="30" Width="30"/>
+                        <TextBlock x:Uid="tbCut" FontSize="7" Text="Taglia" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button x:ConnectionId='692' x:Name="btPaste"                       Padding="0" BorderThickness="5" BorderBrush="Transparent">
+                    <StackPanel>
+                        <Image Source="Assets/paste.png" Height="30" Width="30"/>
+                        <TextBlock x:Uid="tbPaste" FontSize="7" Text="Incolla" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button x:ConnectionId='693' x:Name="btSave"                      Padding="0" BorderThickness="5" BorderBrush="Transparent">
+                    <StackPanel>
+                        <Image Source="Assets/save.png" Height="30" Width="30"/>
+                        <TextBlock x:Uid="tbSave" FontSize="7" Text="Salva" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button x:ConnectionId='694' x:Name="btOpen"                      Padding="0" BorderThickness="5" BorderBrush="Transparent">
+                    <StackPanel>
+                        <Image Source="Assets/open.png" Height="30" Width="30"/>
+                        <TextBlock x:Uid="tbOpen" FontSize="7" Text="Apri" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <!--titolo documento-->
+            <StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right">
+                <TextBlock x:Name="tbTitoloDoc" x:Uid="tbTitoloDoc" Text="Senza titolo.doc" FontSize="25" VerticalAlignment="Center" Margin="20,0,20,0"/>
+            </StackPanel>
+        </Grid>
+
+        <!--riccoEditore-->
+        <RichEditBox x:Name="riccoEditore" Grid.Row="1" IsReadOnly="True" HorizontalAlignment="Stretch" IsSpellCheckEnabled="False" FontSize="23" Canvas.ZIndex="-1" />
+
+        <Viewbox x:Name="vbBottoni" Grid.Row="2">
+            <!--Griglia-->
+            <Grid x:Name="bottoni" Background="{StaticResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Stretch"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition x:Name="primaRiga" Height="40"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition x:Name="primaColonna"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition x:Name="ultimaColonna"/>
+                </Grid.ColumnDefinitions>
+
+
+
+                <!--etichette sinistra-->
+                <TextBlock x:Name="tbsi01" Style="{StaticResource BasicTextStyle}" Grid.Column="0" Grid.Row="1" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Nasal"/>
+                </TextBlock>
+                <TextBlock x:Name="tbsi02" Style="{StaticResource BasicTextStyle}" Grid.Column="0" Grid.Row="2" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Plosive"/>
+                </TextBlock>
+                <TextBlock x:Name="tbsi03" Style="{StaticResource BasicTextStyle}" Grid.Column="0" Grid.Row="3" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Affricate"/>
+                </TextBlock>
+                <TextBlock x:Name="tbsi04" Style="{StaticResource BasicTextStyle}" Grid.Column="0" Grid.Row="4" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Fricative"/>
+                </TextBlock>
+                <TextBlock x:Name="tbsi05" Style="{StaticResource BasicTextStyle}" Grid.Column="0" Grid.Row="5" Margin="2" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Lateral"/>
+                </TextBlock>
+                <TextBlock x:Name="tbsi06" Style="{StaticResource BasicTextStyle}" Grid.Column="0" Grid.Row="5" Margin="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="fricative"/>
+                </TextBlock>
+                <TextBlock x:Name="tbsi07" Style="{StaticResource BasicTextStyle}" Grid.Column="0" Grid.Row="6" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Trill"/>
+                </TextBlock>
+                <TextBlock x:Name="tbsi08" Style="{StaticResource BasicTextStyle}" Grid.Column="0" Grid.Row="7" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Tap Flap"/>
+                </TextBlock>
+                <TextBlock x:Name="tbsi09" Style="{StaticResource BasicTextStyle}" Grid.Column="0" Grid.Row="8" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Approximant"/>
+                </TextBlock>
+                <TextBlock x:Name="tbsi10" Style="{StaticResource BasicTextStyle}" Grid.Column="0" Grid.Row="9"  Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Lateral approx"/>
+                </TextBlock>
+                <TextBlock x:Name="tbsi11" Style="{StaticResource BasicTextStyle}" Grid.Column="0" Grid.Row="10" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Diacritic"/>
+                </TextBlock>
+                <TextBlock x:Name="tbsi12" Style="{StaticResource BasicTextStyle}" Grid.Column="0" Grid.Row="11" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Diacritic"/>
+                </TextBlock>
+
+                <!--etichette destra-->
+                <TextBlock x:Name="tbd01" Style="{StaticResource BasicTextStyle}" Grid.Column="33" Grid.Row="1" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Close"/>
+                </TextBlock>
+                <TextBlock x:Name="tbd02" Style="{StaticResource BasicTextStyle}" Grid.Column="33" Grid.Row="2" Margin="2" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Near"/>
+                </TextBlock>
+                <TextBlock x:Name="tbd03" Style="{StaticResource BasicTextStyle}" Grid.Column="33" Grid.Row="2" Margin="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="close"/>
+                </TextBlock>
+                <TextBlock x:Name="tbd04" Style="{StaticResource BasicTextStyle}" Grid.Column="33" Grid.Row="3" Margin="2" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Close"/>
+                </TextBlock>
+                <TextBlock x:Name="tbd05" Style="{StaticResource BasicTextStyle}" Grid.Column="33" Grid.Row="3" Margin="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="mid"/>
+                </TextBlock>
+                <TextBlock x:Name="tbd06" Style="{StaticResource BasicTextStyle}" Grid.Column="33" Grid.Row="4" Margin="2" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Open"/>
+                </TextBlock>
+                <TextBlock x:Name="tbd07" Style="{StaticResource BasicTextStyle}" Grid.Column="33" Grid.Row="4" Margin="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="mid"/>
+                </TextBlock>
+                <TextBlock x:Name="tbd08" Style="{StaticResource BasicTextStyle}" Grid.Column="33" Grid.Row="5" Margin="2" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Near"/>
+                </TextBlock>
+                <TextBlock x:Name="tbd09" Style="{StaticResource BasicTextStyle}" Grid.Column="33" Grid.Row="5" Margin="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="open"/>
+                </TextBlock>
+                <TextBlock x:Name="tbd10" Style="{StaticResource BasicTextStyle}" Grid.Column="33" Grid.Row="6" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Open"/>
+                </TextBlock>
+                <TextBlock x:Name="tbd11" Style="{StaticResource BasicTextStyle}" Grid.Column="33" Grid.Row="7" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Supra"/>
+                </TextBlock>
+                <TextBlock x:Name="tbd12" Style="{StaticResource BasicTextStyle}" Grid.Column="33" Grid.Row="8" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Supra"/>
+                </TextBlock>
+                <TextBlock x:Name="tbd13" Style="{StaticResource BasicTextStyle}" Grid.Column="33" Grid.Row="9" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Supra"/>
+                </TextBlock>
+
+                <!--etichette sopra-->
+                <TextBlock x:Name="tbso01" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="0" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Bilabial"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso02" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="3" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Labio"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso03" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="3" Grid.Row="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="dental"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso04" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="5" Grid.Row="0" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Dental"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso05" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="7" Grid.Row="0" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Alveolar"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso06" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="9" Grid.Row="0" Margin="2" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Post"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso07" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="9" Grid.Row="0" Margin="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="alveolar"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso08" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="11" Grid.Row="0" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Retroflex"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso09" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="13" Grid.Row="0" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Palatal"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso10" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="15" Grid.Row="0" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Velar"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso11" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="17" Grid.Row="0" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Uvular"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso12" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="19" Grid.Row="0" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Pharyngal"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso13" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="21" Grid.Row="0" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Glottal"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso14" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="23" Grid.Row="0" Margin="2" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Front"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso15" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="23" Grid.Row="0" Margin="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="(palatal)"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso16" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="25" Grid.Row="0" Margin="2" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Near"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso17" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="25" Grid.Row="0" Margin="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="front"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso18" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="27" Grid.Row="0" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Central"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso19" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="29" Grid.Row="0" Margin="2" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Near"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso20" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="29" Grid.Row="0" Margin="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="back"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso21" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="31" Grid.Row="0" Margin="2" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="Back"/>
+                </TextBlock>
+                <TextBlock x:Name="tbso22" Style="{StaticResource BasicTextStyle}" Grid.ColumnSpan="2" Grid.Column="31" Grid.Row="0" Margin="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="{StaticResource TestoEtichette}">
+            <Run Text="(velar)"/>
+                </TextBlock>
+
+
+                <!--bottoni consonanti-->
+                <Button x:ConnectionId='346' Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right"                      Style="{StaticResource bt_fono}" x:Name="c__1" Content="--" />
+                <Button x:ConnectionId='347' Grid.Column="2" Grid.Row="1" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c006d" Content="m"/>
+
+                <Button x:ConnectionId='348' Grid.Column="3" Grid.Row="1" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__2" Content="--" />
+                <Button x:ConnectionId='349' Grid.Column="4" Grid.Row="1" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0271" Content="ɱ" />
+
+                <Button x:ConnectionId='350' Grid.Column="5" Grid.Row="1" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__3" Content="--" />
+                <Button x:ConnectionId='351' Grid.Column="6" Grid.Row="1" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__4" Content="--" />
+
+                <Button x:ConnectionId='352' Grid.Column="7" Grid.Row="1" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__5" Content="--" />
+                <Button x:ConnectionId='353' Grid.Column="8" Grid.Row="1" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c006e" Content="n"/>
+
+                <Button x:ConnectionId='354' Grid.Column="9" Grid.Row="1" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__7" Content="--" />
+                <Button x:ConnectionId='355' Grid.Column="10" Grid.Row="1" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__8" Content="--" />
+
+                <Button x:ConnectionId='356' Grid.Column="11" Grid.Row="1" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__9" Content="--" />
+                <Button x:ConnectionId='357' Grid.Column="12" Grid.Row="1" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0273" Content="ɳ"/>
+
+                <Button x:ConnectionId='358' Grid.Column="13" Grid.Row="1" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__10" Content="--" />
+                <Button x:ConnectionId='359' Grid.Column="14" Grid.Row="1" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0272" Content="ɲ"/>
+
+                <Button x:ConnectionId='360' Grid.Column="15" Grid.Row="1" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__11" Content="--" />
+                <Button x:ConnectionId='361' Grid.Column="16" Grid.Row="1" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c014b" Content="ŋ"/>
+
+                <Button x:ConnectionId='362' Grid.Column="17" Grid.Row="1" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__12" Content="--" />
+                <Button x:ConnectionId='363' Grid.Column="18" Grid.Row="1" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0274" Content="ɴ"/>
+
+                <Button x:ConnectionId='364' Grid.Column="19" Grid.Row="1" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__13" Content="--" />
+                <Button x:ConnectionId='365' Grid.Column="20" Grid.Row="1" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__14" Content="--" />
+
+                <Button x:ConnectionId='366' Grid.Column="21" Grid.Row="1" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__15" Content="--" />
+                <Button x:ConnectionId='367' Grid.Column="22" Grid.Row="1" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__16" Content="--" />
+
+                <Button x:ConnectionId='368' Grid.Column="1" Grid.Row="2" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c0070" Content="p"/>
+                <Button x:ConnectionId='369' Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0062" Content="b"/>
+
+                <Button x:ConnectionId='370' Grid.Column="3" Grid.Row="2" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__17" Content="--" />
+                <Button x:ConnectionId='371' Grid.Column="4" Grid.Row="2" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__18" Content="--" />
+
+                <Button x:ConnectionId='372' Grid.Column="5" Grid.Row="2" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__19" Content="--" />
+                <Button x:ConnectionId='373' Grid.Column="6" Grid.Row="2" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__20" Content="--" />
+
+                <Button x:ConnectionId='374' Grid.Column="7" Grid.Row="2" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c0074" Content="t"/>
+                <Button x:ConnectionId='375' Grid.Column="8" Grid.Row="2" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0064" Content="d"/>
+
+                <Button x:ConnectionId='376' Grid.Column="9" Grid.Row="2" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__21" Content="--" />
+                <Button x:ConnectionId='377' Grid.Column="10" Grid.Row="2" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__22" Content="--" />
+
+                <Button x:ConnectionId='378' Grid.Column="11" Grid.Row="2" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c0288" Content="ʈ"/>
+                <Button x:ConnectionId='379' Grid.Column="12" Grid.Row="2" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0256" Content="ɖ"/>
+
+                <Button x:ConnectionId='380' Grid.Column="13" Grid.Row="2" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c0063" Content="c"/>
+                <Button x:ConnectionId='381' Grid.Column="14" Grid.Row="2" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c025f" Content="ɟ"/>
+
+                <Button x:ConnectionId='382' Grid.Column="15" Grid.Row="2" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c006b" Content="k"/>
+                <Button x:ConnectionId='383' Grid.Column="16" Grid.Row="2" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0261" Content="ɡ"/>
+
+                <Button x:ConnectionId='384' Grid.Column="17" Grid.Row="2" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c0071" Content="q"/>
+                <Button x:ConnectionId='385' Grid.Column="18" Grid.Row="2" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0047" Content="G"/>
+
+                <Button x:ConnectionId='386' Grid.Column="19" Grid.Row="2" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__23" Content="--" />
+                <Button x:ConnectionId='387' Grid.Column="20" Grid.Row="2" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__24" Content="--" />
+
+                <Button x:ConnectionId='388' Grid.Column="21" Grid.Row="2" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c0294" Content="ʔ"/>
+                <Button x:ConnectionId='389' Grid.Column="22" Grid.Row="2" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__25" Content="--" />
+
+                <Button x:ConnectionId='390' Grid.Column="1" Grid.Row="3" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__26" Content="--" />
+                <Button x:ConnectionId='391' Grid.Column="2" Grid.Row="3" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__27" Content="--" />
+
+                <Button x:ConnectionId='392' Grid.Column="3" Grid.Row="3" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c____" Content="pf"/>
+                <Button x:ConnectionId='393' Grid.Column="4" Grid.Row="3" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__28" Content="--" />
+
+                <Button x:ConnectionId='394' Grid.Column="5" Grid.Row="3" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__29" Content="--" />
+                <Button x:ConnectionId='395' Grid.Column="6" Grid.Row="3" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__30" Content="--" />
+
+                <Button x:ConnectionId='396' Grid.Column="7"  Grid.Row="3" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c02a6" Content="ts"/>
+                <Button x:ConnectionId='397' Grid.Column="8"  Grid.Row="3" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c02a3" Content="dz"/>
+
+                <Button x:ConnectionId='398' Grid.Column="9"  Grid.Row="3" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c02a7" Content="ʧ"/>
+                <Button x:ConnectionId='399' Grid.Column="10"  Grid.Row="3" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c02a4" Content="ʤ"/>
+
+                <Button x:ConnectionId='400' Grid.Column="11" Grid.Row="3" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__31" Content="--" />
+                <Button x:ConnectionId='401' Grid.Column="12" Grid.Row="3" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__32" Content="--" />
+
+                <Button x:ConnectionId='402' Grid.Column="13" Grid.Row="3" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__33" Content="--" />
+                <Button x:ConnectionId='403' Grid.Column="14" Grid.Row="3" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__33_2" Content="--" />
+
+                <Button x:ConnectionId='404' Grid.Column="15" Grid.Row="3" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__34" Content="--" />
+                <Button x:ConnectionId='405' Grid.Column="16" Grid.Row="3" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__35" Content="--" />
+
+                <Button x:ConnectionId='406' Grid.Column="17" Grid.Row="3" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__36" Content="--" />
+                <Button x:ConnectionId='407' Grid.Column="18" Grid.Row="3" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__37" Content="--" />
+
+                <Button x:ConnectionId='408' Grid.Column="19"  Grid.Row="3" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__38" Content="--" />
+                <Button x:ConnectionId='409' Grid.Column="20"  Grid.Row="3" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__39" Content="--" />
+
+                <Button x:ConnectionId='410' Grid.Column="21" Grid.Row="3" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__40" Content="--" />
+                <Button x:ConnectionId='411' Grid.Column="22" Grid.Row="3" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__41" Content="--" />
+
+                <Button x:ConnectionId='412' Grid.Column="1" Grid.Row="4" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c0278" Content="ɸ"/>
+                <Button x:ConnectionId='413' Grid.Column="2" Grid.Row="4" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c03b2" Content="β"/>
+
+                <Button x:ConnectionId='414' Grid.Column="3" Grid.Row="4" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c0066" Content="f"/>
+                <Button x:ConnectionId='415' Grid.Column="4" Grid.Row="4" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0076" Content="v"/>
+
+                <Button x:ConnectionId='416' Grid.Column="5" Grid.Row="4" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c03b8" Content="θ"/>
+                <Button x:ConnectionId='417' Grid.Column="6" Grid.Row="4" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c00f0" Content="ð"/>
+
+                <Button x:ConnectionId='418' Grid.Column="7"  Grid.Row="4" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c0073" Content="s"/>
+                <Button x:ConnectionId='419' Grid.Column="8"  Grid.Row="4" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c007a" Content="z"/>
+
+                <Button x:ConnectionId='420' Grid.Column="9"  Grid.Row="4" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c0283" Content="ʃ"/>
+                <Button x:ConnectionId='421' Grid.Column="10"  Grid.Row="4" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0292" Content="ʒ"/>
+
+                <Button x:ConnectionId='422' Grid.Column="11" Grid.Row="4" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c0282" Content="ʂ"/>
+                <Button x:ConnectionId='423' Grid.Column="12" Grid.Row="4" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0290" Content="ʐ"/>
+
+                <Button x:ConnectionId='424' Grid.Column="13" Grid.Row="4" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c00e7" Content="ç"/>
+                <Button x:ConnectionId='425' Grid.Column="14" Grid.Row="4" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c029d" Content="ʝ"/>
+
+                <Button x:ConnectionId='426' Grid.Column="15" Grid.Row="4" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c0078" Content="x"/>
+                <Button x:ConnectionId='427' Grid.Column="16" Grid.Row="4" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0263" Content="ɣ"/>
+
+                <Button x:ConnectionId='428' Grid.Column="17" Grid.Row="4" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c03c7" Content="χ"/>
+                <Button x:ConnectionId='429' Grid.Column="18" Grid.Row="4" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0281" Content="ʁ"/>
+
+                <Button x:ConnectionId='430' Grid.Column="19"  Grid.Row="4" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c0127" Content="ħ"/>
+                <Button x:ConnectionId='431' Grid.Column="20"  Grid.Row="4" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0295" Content="ʕ"/>
+
+                <Button x:ConnectionId='432' Grid.Column="21" Grid.Row="4" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c0068" Content="h"/>
+                <Button x:ConnectionId='433' Grid.Column="22" Grid.Row="4" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0266" Content="ɦ"/>
+
+                <Button x:ConnectionId='434' Grid.Column="1" Grid.Row="5" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__42" Content="--" />
+                <Button x:ConnectionId='435' Grid.Column="2" Grid.Row="5" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__43" Content="--" />
+
+                <Button x:ConnectionId='436' Grid.Column="3" Grid.Row="5" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__44" Content="--" />
+                <Button x:ConnectionId='437' Grid.Column="4" Grid.Row="5" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__45" Content="--" />
+
+                <Button x:ConnectionId='438' Grid.Column="5" Grid.Row="5" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__46" Content="--" />
+                <Button x:ConnectionId='439' Grid.Column="6" Grid.Row="5" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__47" Content="--" />
+
+                <Button x:ConnectionId='440' Grid.Column="7"  Grid.Row="5" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c026c" Content="ɬ"/>
+                <Button x:ConnectionId='441' Grid.Column="8"  Grid.Row="5" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c026e" Content="ɮ"/>
+
+                <Button x:ConnectionId='442' Grid.Column="9"  Grid.Row="5" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__48" Content="--" />
+                <Button x:ConnectionId='443' Grid.Column="10"  Grid.Row="5" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__49" Content="--" />
+
+                <Button x:ConnectionId='444' Grid.Column="11" Grid.Row="5" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__50" Content="--" />
+                <Button x:ConnectionId='445' Grid.Column="12" Grid.Row="5" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__51" Content="--" />
+
+                <Button x:ConnectionId='446' Grid.Column="13" Grid.Row="5" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__52" Content="--" />
+                <Button x:ConnectionId='447' Grid.Column="14" Grid.Row="5" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__53" Content="--" />
+
+                <Button x:ConnectionId='448' Grid.Column="15" Grid.Row="5" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__54" Content="--" />
+                <Button x:ConnectionId='449' Grid.Column="16" Grid.Row="5" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__55" Content="--" />
+
+                <Button x:ConnectionId='450' Grid.Column="17" Grid.Row="5" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__56" Content="--" />
+                <Button x:ConnectionId='451' Grid.Column="18" Grid.Row="5" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__57" Content="--" />
+
+                <Button x:ConnectionId='452' Grid.Column="19"  Grid.Row="5" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__58" Content="--" />
+                <Button x:ConnectionId='453' Grid.Column="20"  Grid.Row="5" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__59" Content="--" />
+
+                <Button x:ConnectionId='454' Grid.Column="21" Grid.Row="5" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__60" Content="--" />
+                <Button x:ConnectionId='455' Grid.Column="22" Grid.Row="5" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__61" Content="--" />
+
+                <Button x:ConnectionId='456' Grid.Column="1" Grid.Row="6" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__62" Content="--" />
+                <Button x:ConnectionId='457' Grid.Column="2" Grid.Row="6" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0042" Content="B"/>
+
+                <Button x:ConnectionId='458' Grid.Column="3" Grid.Row="6" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__63" Content="--" />
+                <Button x:ConnectionId='459' Grid.Column="4" Grid.Row="6" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__64" Content="--" />
+
+                <Button x:ConnectionId='460' Grid.Column="5" Grid.Row="6" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__65" Content="--" />
+                <Button x:ConnectionId='461' Grid.Column="6" Grid.Row="6" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__66" Content="--" />
+
+                <Button x:ConnectionId='462' Grid.Column="7"  Grid.Row="6" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__67" Content="--" />
+                <Button x:ConnectionId='463' Grid.Column="8"  Grid.Row="6" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0072" Content="r"/>
+
+                <Button x:ConnectionId='464' Grid.Column="9"  Grid.Row="6" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__68" Content="--" />
+                <Button x:ConnectionId='465' Grid.Column="10"  Grid.Row="6" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__69" Content="--" />
+
+                <Button x:ConnectionId='466' Grid.Column="11" Grid.Row="6" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__70" Content="--" />
+                <Button x:ConnectionId='467' Grid.Column="12" Grid.Row="6" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__71" Content="--" />
+
+                <Button x:ConnectionId='468' Grid.Column="13" Grid.Row="6" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__72" Content="--" />
+                <Button x:ConnectionId='469' Grid.Column="14" Grid.Row="6" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__73" Content="--" />
+
+                <Button x:ConnectionId='470' Grid.Column="15" Grid.Row="6" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__74" Content="--" />
+                <Button x:ConnectionId='471' Grid.Column="16" Grid.Row="6" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__75" Content="--" />
+
+                <Button x:ConnectionId='472' Grid.Column="17" Grid.Row="6" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__76" Content="--" />
+                <Button x:ConnectionId='473' Grid.Column="18" Grid.Row="6" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0052" Content="R"/>
+
+                <Button x:ConnectionId='474' Grid.Column="19"  Grid.Row="6" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__77" Content="--" />
+                <Button x:ConnectionId='475' Grid.Column="20"  Grid.Row="6" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__78" Content="--" />
+
+                <Button x:ConnectionId='476' Grid.Column="21" Grid.Row="6" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__79" Content="--" />
+                <Button x:ConnectionId='477' Grid.Column="22" Grid.Row="6" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__80" Content="--" />
+
+                <Button x:ConnectionId='478' Grid.Column="1" Grid.Row="7" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__81" Content="--" />
+                <Button x:ConnectionId='479' Grid.Column="2" Grid.Row="7" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__82" Content="--" />
+
+                <Button x:ConnectionId='480' Grid.Column="3" Grid.Row="7" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__83" Content="--" />
+                <Button x:ConnectionId='481' Grid.Column="4" Grid.Row="7" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c2c71" Content="ⱱ"/>
+
+                <Button x:ConnectionId='482' Grid.Column="5" Grid.Row="7" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__84" Content="--" />
+                <Button x:ConnectionId='483' Grid.Column="6" Grid.Row="7" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__85" Content="--" />
+
+                <Button x:ConnectionId='484' Grid.Column="7"  Grid.Row="7" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__86" Content="--" />
+                <Button x:ConnectionId='485' Grid.Column="8"  Grid.Row="7" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c027e" Content="ɾ"/>
+
+                <Button x:ConnectionId='486' Grid.Column="9"  Grid.Row="7" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__87" Content="--" />
+                <Button x:ConnectionId='487' Grid.Column="10"  Grid.Row="7" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__88" Content="--" />
+
+                <Button x:ConnectionId='488' Grid.Column="11" Grid.Row="7" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__89" Content="--" />
+                <Button x:ConnectionId='489' Grid.Column="12" Grid.Row="7" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c027d" Content="ɽ"/>
+
+                <Button x:ConnectionId='490' Grid.Column="13" Grid.Row="7" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__90" Content="--" />
+                <Button x:ConnectionId='491' Grid.Column="14" Grid.Row="7" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__91" Content="--" />
+
+                <Button x:ConnectionId='492' Grid.Column="15" Grid.Row="7" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__92" Content="--" />
+                <Button x:ConnectionId='493' Grid.Column="16" Grid.Row="7" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__93" Content="--" />
+
+                <Button x:ConnectionId='494' Grid.Column="17" Grid.Row="7" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__94" Content="--" />
+                <Button x:ConnectionId='495' Grid.Column="18" Grid.Row="7" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__95" Content="--" />
+
+                <Button x:ConnectionId='496' Grid.Column="19"  Grid.Row="7" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__96" Content="--" />
+                <Button x:ConnectionId='497' Grid.Column="20"  Grid.Row="7" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__97" Content="--" />
+
+                <Button x:ConnectionId='498' Grid.Column="21" Grid.Row="7" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__98" Content="--" />
+                <Button x:ConnectionId='499' Grid.Column="22" Grid.Row="7" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__99" Content="--" />
+
+                <Button x:ConnectionId='500' Grid.Column="1" Grid.Row="8" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__101" Content="--" />
+                <Button x:ConnectionId='501' Grid.Column="2" Grid.Row="8" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__102" Content="--" />
+
+                <Button x:ConnectionId='502' Grid.Column="3" Grid.Row="8" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__103" Content="--" />
+                <Button x:ConnectionId='503' Grid.Column="4" Grid.Row="8" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c028b" Content="ʋ"/>
+
+                <Button x:ConnectionId='504' Grid.Column="5" Grid.Row="8" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__104" Content="--" />
+                <Button x:ConnectionId='505' Grid.Column="6" Grid.Row="8" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__105" Content="--" />
+
+                <Button x:ConnectionId='506' Grid.Column="7"  Grid.Row="8" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__106" Content="--" />
+                <Button x:ConnectionId='507' Grid.Column="8"  Grid.Row="8" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0279" Content="ɹ"/>
+
+                <Button x:ConnectionId='508' Grid.Column="9"  Grid.Row="8" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__107" Content="--" />
+                <Button x:ConnectionId='509' Grid.Column="10"  Grid.Row="8" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__108" Content="--" />
+
+                <Button x:ConnectionId='510' Grid.Column="11" Grid.Row="8" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__109" Content="--" />
+                <Button x:ConnectionId='511' Grid.Column="12" Grid.Row="8" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c027b" Content="ɻ"/>
+
+                <Button x:ConnectionId='512' Grid.Column="13" Grid.Row="8" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c0265" Content="ɥ"/>
+                <Button x:ConnectionId='513' Grid.Column="14" Grid.Row="8" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c006a" Content="j"/>
+
+                <Button x:ConnectionId='514' Grid.Column="15" Grid.Row="8" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c0077" Content="w"/>
+                <Button x:ConnectionId='515' Grid.Column="16" Grid.Row="8" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c0270" Content="ɰ"/>
+
+                <Button x:ConnectionId='516' Grid.Column="17" Grid.Row="8" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__110" Content="--" />
+                <Button x:ConnectionId='517' Grid.Column="18" Grid.Row="8" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__111" Content="--" />
+
+                <Button x:ConnectionId='518' Grid.Column="19"  Grid.Row="8" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__112" Content="--" />
+                <Button x:ConnectionId='519' Grid.Column="20"  Grid.Row="8" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__113" Content="--" />
+
+                <Button x:ConnectionId='520' Grid.Column="21" Grid.Row="8" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__114" Content="--" />
+                <Button x:ConnectionId='521' Grid.Column="22" Grid.Row="8" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__115" Content="--" />
+
+                <Button x:ConnectionId='522' Grid.Column="1" Grid.Row="9" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__116" Content="--" />
+                <Button x:ConnectionId='523' Grid.Column="2" Grid.Row="9" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__117" Content="--" />
+
+                <Button x:ConnectionId='524' Grid.Column="3" Grid.Row="9" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__118" Content="--" />
+                <Button x:ConnectionId='525' Grid.Column="4" Grid.Row="9" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__119" Content="--" />
+
+                <Button x:ConnectionId='526' Grid.Column="5" Grid.Row="9" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__120" Content="--" />
+                <Button x:ConnectionId='527' Grid.Column="6" Grid.Row="9" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__121" Content="--" />
+
+                <Button x:ConnectionId='528' Grid.Column="7"  Grid.Row="9" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__122" Content="--" />
+                <Button x:ConnectionId='529' Grid.Column="8"  Grid.Row="9" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c006c" Content="l"/>
+
+                <Button x:ConnectionId='530' Grid.Column="9"  Grid.Row="9" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__123" Content="--" />
+                <Button x:ConnectionId='531' Grid.Column="10"  Grid.Row="9" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__124" Content="--" />
+
+                <Button x:ConnectionId='532' Grid.Column="11" Grid.Row="9" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__125" Content="--" />
+                <Button x:ConnectionId='533' Grid.Column="12" Grid.Row="9" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c026d" Content="ɭ"/>
+
+                <Button x:ConnectionId='534' Grid.Column="13" Grid.Row="9" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__126" Content="--" />
+                <Button x:ConnectionId='535' Grid.Column="14" Grid.Row="9" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c028e" Content="ʎ"/>
+
+                <Button x:ConnectionId='536' Grid.Column="15" Grid.Row="9" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__127" Content="--" />
+                <Button x:ConnectionId='537' Grid.Column="16" Grid.Row="9" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c024c" Content="L"/>
+
+                <Button x:ConnectionId='538' Grid.Column="17" Grid.Row="9" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__128" Content="--" />
+                <Button x:ConnectionId='539' Grid.Column="18" Grid.Row="9" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__129" Content="--" />
+
+                <Button x:ConnectionId='540' Grid.Column="19"  Grid.Row="9" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__130" Content="--" />
+                <Button x:ConnectionId='541' Grid.Column="20"  Grid.Row="9" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__131" Content="--" />
+
+                <Button x:ConnectionId='542' Grid.Column="21" Grid.Row="9" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__132" Content="--" />
+                <Button x:ConnectionId='543' Grid.Column="22" Grid.Row="9" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__133" Content="--" />
+
+                <Button x:ConnectionId='544' Grid.Column="1" Grid.Row="10" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__134" Content="ʼ" />
+                <Button x:ConnectionId='545' Grid.Column="2" Grid.Row="10" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__135" Content="ʻ" />
+
+                <Button x:ConnectionId='546' Grid.Column="3" Grid.Row="10" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__136" Content="̥" />
+                <Button x:ConnectionId='547' Grid.Column="4" Grid.Row="10" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__137" Content="̬" />
+
+                <Button x:ConnectionId='548' Grid.Column="5" Grid.Row="10" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__138" Content="°" />
+                <Button x:ConnectionId='549' Grid.Column="6" Grid.Row="10" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__139" Content="--" />
+
+                <Button x:ConnectionId='550' Grid.Column="7"  Grid.Row="10" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__140" Content="ʰ" />
+                <Button x:ConnectionId='551' Grid.Column="8"  Grid.Row="10" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__141" Content="--" />
+
+                <Button x:ConnectionId='552' Grid.Column="9"  Grid.Row="10" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__142" Content="̹" />
+                <Button x:ConnectionId='553' Grid.Column="10"  Grid.Row="10" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__143" Content="̜" />
+
+                <Button x:ConnectionId='554' Grid.Column="11" Grid.Row="10" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__144" Content="̟" />
+                <Button x:ConnectionId='555' Grid.Column="12" Grid.Row="10" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__145" Content="̠" />
+
+                <Button x:ConnectionId='556' Grid.Column="13" Grid.Row="10" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__146" Content="̈" />
+                <Button x:ConnectionId='557' Grid.Column="14" Grid.Row="10" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__147" Content="̽" />
+
+                <Button x:ConnectionId='558' Grid.Column="15" Grid.Row="10" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__148" Content="̩" />
+                <Button x:ConnectionId='559' Grid.Column="16" Grid.Row="10" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__149" Content="̯" />
+
+                <Button x:ConnectionId='560' Grid.Column="17" Grid.Row="10" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__150" Content="ʴ" />
+                <Button x:ConnectionId='561' Grid.Column="18" Grid.Row="10" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__151" Content="̤" />
+
+                <Button x:ConnectionId='562' Grid.Column="19"  Grid.Row="10" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__152" Content="̤" />
+                <Button x:ConnectionId='563' Grid.Column="20"  Grid.Row="10" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__153"  Content="̰" />
+
+                <Button x:ConnectionId='564' Grid.Column="21" Grid.Row="10" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__154" Content="̼" />
+                <Button x:ConnectionId='565' Grid.Column="22" Grid.Row="10" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__155" Content="--" />
+
+                <Button x:ConnectionId='566' Grid.Column="1" Grid.Row="11" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__156" Content="ʷ" />
+                <Button x:ConnectionId='567' Grid.Column="2" Grid.Row="11" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__157" Content="ʲ" />
+
+                <Button x:ConnectionId='568' Grid.Column="3" Grid.Row="11" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__158" Content="ˠ" />
+                <Button x:ConnectionId='569' Grid.Column="4" Grid.Row="11" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__159" Content="ˤ" />
+
+                <Button x:ConnectionId='570' Grid.Column="5" Grid.Row="11" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__160" Content="̪" />
+                <Button x:ConnectionId='571' Grid.Column="6" Grid.Row="11" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__161" Content="̺" />
+
+                <Button x:ConnectionId='572' Grid.Column="7"  Grid.Row="11" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__162" Content="̻" />
+                <Button x:ConnectionId='573' Grid.Column="8"  Grid.Row="11" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__163" Content="̃" />
+
+                <Button x:ConnectionId='574' Grid.Column="9"  Grid.Row="11" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__164" Content="͡" />
+                <Button x:ConnectionId='575' Grid.Column="10"  Grid.Row="11" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__165" Content="--" />
+
+                <Button x:ConnectionId='576' Grid.Column="11" Grid.Row="11" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__166" Content="ⁿ" />
+                <Button x:ConnectionId='577' Grid.Column="12" Grid.Row="11" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__167" Content="ˡ" />
+
+                <Button x:ConnectionId='578' Grid.Column="13" Grid.Row="11" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__168" Content="̚" />
+                <Button x:ConnectionId='579' Grid.Column="14" Grid.Row="11" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__169" Content="̴" />
+
+                <Button x:ConnectionId='580' Grid.Column="15" Grid.Row="11" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__170" Content="̝" />
+                <Button x:ConnectionId='581' Grid.Column="16" Grid.Row="11" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__171" Content="̞" />
+
+                <Button x:ConnectionId='582' Grid.Column="17" Grid.Row="11" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__172" Content="̘" />
+                <Button x:ConnectionId='583' Grid.Column="18" Grid.Row="11" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__173" Content="̙" />
+
+                <Button x:ConnectionId='584' Grid.Column="19"  Grid.Row="11" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__174" Content="--" />
+                <Button x:ConnectionId='585' Grid.Column="20"  Grid.Row="11" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__175" Content="--" />
+
+                <Button x:ConnectionId='586' Grid.Column="21" Grid.Row="11" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__176" Content="--" />
+                <Button x:ConnectionId='587' Grid.Column="22" Grid.Row="11" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__177" Content="--" />
+
+                <!--bottoni vocali-->
+                <Button x:ConnectionId='588' Grid.Column="23" Grid.Row="1" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="v0069" Content="i"/>
+                <Button x:ConnectionId='589' Grid.Column="24" Grid.Row="1" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__178" Content="--" />
+
+                <Button x:ConnectionId='590' Grid.Column="25" Grid.Row="1" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__179" Content="--" />
+                <Button x:ConnectionId='591' Grid.Column="26" Grid.Row="1" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="v0079" Content="y"/>
+
+                <Button x:ConnectionId='592' Grid.Column="27" Grid.Row="1" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="v0268" Content="ɨ"/>
+                <Button x:ConnectionId='593' Grid.Column="28" Grid.Row="1" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="v0289" Content="ʉ"/>
+
+                <Button x:ConnectionId='594' Grid.Column="29" Grid.Row="1" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="v026f" Content="ɯ"/>
+                <Button x:ConnectionId='595' Grid.Column="30" Grid.Row="1" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__180" Content="--" />
+
+                <Button x:ConnectionId='596' Grid.Column="31" Grid.Row="1" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__181" Content="--" />
+                <Button x:ConnectionId='597' Grid.Column="32" Grid.Row="1" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="v0075" Content="u"/>
+
+                <Button x:ConnectionId='598' Grid.Column="23" Grid.Row="2" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="v026a" Content="ɪ"/>
+                <Button x:ConnectionId='599' Grid.Column="24" Grid.Row="2" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__182" Content="--" />
+
+                <Button x:ConnectionId='600' Grid.Column="25" Grid.Row="2" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="v0269" Content="ɩ"/>
+                <!--carattere prob errato cod  0269-->
+                <Button x:ConnectionId='601' Grid.Column="26" Grid.Row="2" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="v028f" Content="ʏ"/>
+
+                <Button x:ConnectionId='602' Grid.Column="27" Grid.Row="2" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__183" Content="--" />
+                <Button x:ConnectionId='603' Grid.Column="28" Grid.Row="2" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__184" Content="--" />
+
+                <Button x:ConnectionId='604' Grid.Column="29" Grid.Row="2" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__185" Content="--" />
+                <Button x:ConnectionId='605' Grid.Column="30" Grid.Row="2" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__186" Content="--" />
+
+                <Button x:ConnectionId='606' Grid.Column="31" Grid.Row="2" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__187" Content="--" />
+                <Button x:ConnectionId='607' Grid.Column="32" Grid.Row="2" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="v028a" Content="ʊ"/>
+
+                <Button x:ConnectionId='608' Grid.Column="23" Grid.Row="3" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="v0065" Content="e"/>
+                <Button x:ConnectionId='609' Grid.Column="24" Grid.Row="3" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__188" Content="--" />
+
+                <Button x:ConnectionId='610' Grid.Column="25" Grid.Row="3" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="v0258" Content="ɘ"/>
+                <Button x:ConnectionId='611' Grid.Column="26" Grid.Row="3" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="v00f8" Content="ø"/>
+
+                <Button x:ConnectionId='612' Grid.Column="27" Grid.Row="3" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="v0259" Content="ə"/>
+                <Button x:ConnectionId='613' Grid.Column="28" Grid.Row="3" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="v0275" Content="ɵ"/>
+
+                <Button x:ConnectionId='614' Grid.Column="29" Grid.Row="3" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="v0264" Content="ɤ"/>
+                <Button x:ConnectionId='615' Grid.Column="30" Grid.Row="3" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__189" Content="--" />
+
+                <Button x:ConnectionId='616' Grid.Column="31" Grid.Row="3" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__190" Content="--" />
+                <Button x:ConnectionId='617' Grid.Column="32" Grid.Row="3" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="v006f" Content="o"/>
+
+                <Button x:ConnectionId='618' Grid.Column="23" Grid.Row="4" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__191" Content="--" />
+                <Button x:ConnectionId='619' Grid.Column="24" Grid.Row="4" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__192" Content="--" />
+
+                <Button x:ConnectionId='620' Grid.Column="25" Grid.Row="4" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__193" Content="--" />
+                <Button x:ConnectionId='621' Grid.Column="26" Grid.Row="4" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__194" Content="--" />
+
+                <Button x:ConnectionId='622' Grid.Column="27" Grid.Row="4" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="v025c" Content="ɜ"/>
+                <Button x:ConnectionId='623' Grid.Column="28" Grid.Row="4" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="v025e" Content="ɞ"/>
+
+                <Button x:ConnectionId='624' Grid.Column="29" Grid.Row="4" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__195" Content="--" />
+                <Button x:ConnectionId='625' Grid.Column="30" Grid.Row="4" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__196" Content="--" />
+
+                <Button x:ConnectionId='626' Grid.Column="31" Grid.Row="4" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__197" Content="--" />
+                <Button x:ConnectionId='627' Grid.Column="32" Grid.Row="4" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__198" Content="--" />
+
+                <Button x:ConnectionId='628' Grid.Column="23" Grid.Row="5" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="v025b" Content="ɛ"/>
+                <Button x:ConnectionId='629' Grid.Column="24" Grid.Row="5" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__199" Content="--" />
+
+                <Button x:ConnectionId='630' Grid.Column="25" Grid.Row="5" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__200" Content="--" />
+                <Button x:ConnectionId='631' Grid.Column="26" Grid.Row="5" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="v0153" Content="œ"/>
+
+                <Button x:ConnectionId='632' Grid.Column="27" Grid.Row="5" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="v0250" Content="ɐ"/>
+                <Button x:ConnectionId='633' Grid.Column="28" Grid.Row="5" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__201" Content="--" />
+
+                <Button x:ConnectionId='634' Grid.Column="29" Grid.Row="5" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="v028c" Content="ʌ"/>
+                <Button x:ConnectionId='635' Grid.Column="30" Grid.Row="5" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__202" Content="--" />
+
+                <Button x:ConnectionId='636' Grid.Column="31" Grid.Row="5" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__203" Content="--" />
+                <Button x:ConnectionId='637' Grid.Column="32" Grid.Row="5" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="v0254" Content="ɔ"/>
+
+                <Button x:ConnectionId='638' Grid.Column="23" Grid.Row="6" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="v00e6" Content="æ"/>
+                <Button x:ConnectionId='639' Grid.Column="24" Grid.Row="6" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__204" Content="--" />
+
+                <Button x:ConnectionId='640' Grid.Column="25" Grid.Row="6" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__205" Content="--" />
+                <Button x:ConnectionId='641' Grid.Column="26" Grid.Row="6" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="v0276" Content="ɶ"/>
+
+                <Button x:ConnectionId='642' Grid.Column="27" Grid.Row="6" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="v0061" Content="a"/>
+                <Button x:ConnectionId='643' Grid.Column="28" Grid.Row="6" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__206" Content="--" />
+
+                <Button x:ConnectionId='644' Grid.Column="29" Grid.Row="6" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="v0251" Content="ɑ"/>
+                <Button x:ConnectionId='645' Grid.Column="30" Grid.Row="6" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__207" Content="--" />
+
+                <Button x:ConnectionId='646' Grid.Column="31" Grid.Row="6" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__208" Content="--" />
+                <Button x:ConnectionId='647' Grid.Column="32" Grid.Row="6" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="v0252" Content="ɒ"/>
+
+                <Button x:ConnectionId='648' Grid.Column="23" Grid.Row="7" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__209" Content="ˈ" />
+                <Button x:ConnectionId='649' Grid.Column="24" Grid.Row="7" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__210" Content="ˌ" />
+
+                <Button x:ConnectionId='650' Grid.Column="25" Grid.Row="7" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__211" Content="ː" />
+                <Button x:ConnectionId='651' Grid.Column="26" Grid.Row="7" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__212" Content="ˑ" />
+
+                <Button x:ConnectionId='652' Grid.Column="27" Grid.Row="7" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__213" Content="̆" />
+                <Button x:ConnectionId='653' Grid.Column="28" Grid.Row="7" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__214" Content="." />
+
+                <Button x:ConnectionId='654' Grid.Column="29" Grid.Row="7" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__215" Content="|" />
+                <Button x:ConnectionId='655' Grid.Column="30" Grid.Row="7" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__216" Content="‖" />
+
+                <Button x:ConnectionId='656' Grid.Column="31" Grid.Row="7" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__217" Content="‿" />
+                <Button x:ConnectionId='657' Grid.Column="32" Grid.Row="7" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__218" Content="--" />
+
+                <Button x:ConnectionId='658' Grid.Column="23" Grid.Row="8" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__219"  Content="˥" />
+                <Button x:ConnectionId='659' Grid.Column="24" Grid.Row="8" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__220" Content="˦" />
+
+                <Button x:ConnectionId='660' Grid.Column="25" Grid.Row="8" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__221" Content="˧" />
+                <Button x:ConnectionId='661' Grid.Column="26" Grid.Row="8" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__222" Content="˨" />
+
+                <Button x:ConnectionId='662' Grid.Column="27" Grid.Row="8" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__223" Content="˩" />
+                <Button x:ConnectionId='663' Grid.Column="28" Grid.Row="8" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__224" Content="--" />
+
+                <Button x:ConnectionId='664' Grid.Column="29" Grid.Row="8" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__225" Content="↑" />
+                <Button x:ConnectionId='665' Grid.Column="30" Grid.Row="8" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__226" Content="↓" />
+
+                <Button x:ConnectionId='666' Grid.Column="31" Grid.Row="8" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__227" Content="↗" />
+                <Button x:ConnectionId='667' Grid.Column="32" Grid.Row="8" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__228" Content="↘" />
+
+                <Button x:ConnectionId='668' Grid.Column="23" Grid.Row="9" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__229" Content="₀" />
+                <Button x:ConnectionId='669' Grid.Column="24" Grid.Row="9" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__230" Content="₁" />
+
+                <Button x:ConnectionId='670' Grid.Column="25" Grid.Row="9" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__231" Content="₂" />
+                <Button x:ConnectionId='671' Grid.Column="26" Grid.Row="9" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__232" Content="₃" />
+
+                <Button x:ConnectionId='672' Grid.Column="27" Grid.Row="9" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__233" Content="₄" />
+                <Button x:ConnectionId='673' Grid.Column="28" Grid.Row="9" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__234" Content="₅" />
+
+                <Button x:ConnectionId='674' Grid.Column="29" Grid.Row="9" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__235" Content="₆" />
+                <Button x:ConnectionId='675' Grid.Column="30" Grid.Row="9" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__236" Content="₇" />
+
+                <Button x:ConnectionId='676' Grid.Column="31" Grid.Row="9" HorizontalAlignment="Right" IsEnabled="True"                      Style="{StaticResource bt_fono}" x:Name="c__237" Content="₈" />
+                <Button x:ConnectionId='677' Grid.Column="32" Grid.Row="9" HorizontalAlignment="Left" IsEnabled="False"                      Style="{StaticResource bt_fono}" x:Name="c__238" Content="₉" />
+
+
+
+                <!--Bottoni funzionalità-->
+                <Button x:ConnectionId='678' x:Name="btBacks" Grid.Column="23" Grid.Row="10" Grid.ColumnSpan="4" FontSize="14" HorizontalAlignment="Stretch"                       Style="{StaticResource BtControl}">
+                    <StackPanel>
+                        <Image Source="Assets/backs.png" Height="20" Width="20"/>
+                    </StackPanel>
+                </Button>
+                <Button x:ConnectionId='679' x:Name="btSpazio" x:Uid="btSpazio" Grid.Column="23" Grid.Row="11" Grid.ColumnSpan="4" FontSize="14" HorizontalAlignment="Stretch"                        Style="{StaticResource BtControl}" Content="Spazio"/>
+                <Button x:ConnectionId='680' x:Name="btInvio"  Grid.Column="27" Grid.Row="10"  FontSize="14" Grid.ColumnSpan="3" HorizontalAlignment="Center"                       Style="{StaticResource BtControl}" >
+                    <StackPanel>
+                        <Image Source="Assets/invio.png" Height="20" Width="20"/>
+                    </StackPanel>
+                </Button>
+                <Button x:ConnectionId='681' x:Name="btShift" Grid.Column="27" Grid.Row="11"  FontSize="14" Grid.ColumnSpan="3" HorizontalAlignment="Center"                       Style="{StaticResource BtControl}">
+                    <StackPanel>
+                        <Image Source="Assets/shiftW.png" Height="20" Width="20"/>
+                    </StackPanel>
+                </Button>
+
+                <!--Bottoni frecce-->
+                <Button x:ConnectionId='682' x:Name="btSu" Grid.Column="31" Grid.Row="10" FontSize="14" Padding="0" HorizontalAlignment="Center"                    Style="{StaticResource BtControl}">
+                    <StackPanel>
+                        <Image Source="Assets/btSu.png" Height="20" Width="20"/>
+                    </StackPanel>
+                </Button>
+                <Button x:ConnectionId='683' x:Name="btGiu" Grid.Column="31" Grid.Row="11" FontSize="14" Padding="0" HorizontalAlignment="Center"                     Style="{StaticResource BtControl}">
+                    <StackPanel>
+                        <Image Source="Assets/btGiu.png" Height="20" Width="20"/>
+                    </StackPanel>
+                </Button>
+                <Button x:ConnectionId='684' x:Name="btDx" Grid.Column="32" Grid.Row="11" FontSize="14" Padding="0" HorizontalAlignment="Center"                    Style="{StaticResource BtControl}">
+                    <StackPanel>
+                        <Image Source="Assets/btDx.png" Height="20" Width="20"/>
+                    </StackPanel>
+                </Button>
+                <Button x:ConnectionId='685' x:Name="btSx" Grid.Column="30" Grid.Row="11" Padding="0" HorizontalAlignment="Center"                    Style="{StaticResource BtControl}">
+                    <StackPanel>
+                        <Image Source="Assets/btSx.png" Height="20" Width="20"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+        </Viewbox>
+
+            <!--_Griglia-->
+        <Grid x:Name="_bottoni" Grid.Row="2" Background="{StaticResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Stretch" Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <!--bottoni consonanti-->
+            <Button x:ConnectionId='6' Grid.Column="1" Grid.Row="1" FontSize="17" Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__1" Content="--" />
+            <Button x:ConnectionId='7' Grid.Column="1" Grid.Row="1" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c006d" Content="m"/>
+
+            <Button x:ConnectionId='8' Grid.Column="2" Grid.Row="1" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__2" Content="--" />
+            <Button x:ConnectionId='9' Grid.Column="2" Grid.Row="1" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0271" Content="ɱ" />
+
+            <Button x:ConnectionId='10' Grid.Column="3" Grid.Row="1" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__3" Content="--" />
+            <Button x:ConnectionId='11' Grid.Column="3" Grid.Row="1" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__4" Content="--" />
+
+            <Button x:ConnectionId='12' Grid.Column="4" Grid.Row="1" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__5" Content="--" />
+            <Button x:ConnectionId='13' Grid.Column="4" Grid.Row="1" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c006e" Content="n"/>
+
+            <Button x:ConnectionId='14' Grid.Column="5" Grid.Row="1" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__7" Content="--" />
+            <Button x:ConnectionId='15' Grid.Column="5" Grid.Row="1" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__8" Content="--" />
+
+            <Button x:ConnectionId='16' Grid.Column="6" Grid.Row="1" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__9" Content="--" />
+            <Button x:ConnectionId='17' Grid.Column="6" Grid.Row="1" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0273" Content="ɳ"/>
+
+            <Button x:ConnectionId='18' Grid.Column="7" Grid.Row="1" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__10" Content="--" />
+            <Button x:ConnectionId='19' Grid.Column="7" Grid.Row="1" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0272" Content="ɲ"/>
+
+            <Button x:ConnectionId='20' Grid.Column="8" Grid.Row="1" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__11" Content="--" />
+            <Button x:ConnectionId='21' Grid.Column="8" Grid.Row="1" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c014b" Content="ŋ"/>
+
+            <Button x:ConnectionId='22' Grid.Column="9" Grid.Row="1" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__12" Content="--" />
+            <Button x:ConnectionId='23' Grid.Column="9" Grid.Row="1" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0274" Content="ɴ"/>
+
+            <Button x:ConnectionId='24' Grid.Column="10" Grid.Row="1" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__13" Content="--" />
+            <Button x:ConnectionId='25' Grid.Column="10" Grid.Row="1" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__14" Content="--" />
+
+            <Button x:ConnectionId='26' Grid.Column="11" Grid.Row="1" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__15" Content="--" />
+            <Button x:ConnectionId='27' Grid.Column="11" Grid.Row="1" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__16" Content="--" />
+
+            <Button x:ConnectionId='28' Grid.Column="1" Grid.Row="2" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c0070" Content="p"/>
+            <Button x:ConnectionId='29' Grid.Column="1" Grid.Row="2" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0062" Content="b"/>
+
+            <Button x:ConnectionId='30' Grid.Column="2" Grid.Row="2" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__17" Content="--" />
+            <Button x:ConnectionId='31' Grid.Column="2" Grid.Row="2" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__18" Content="--" />
+
+            <Button x:ConnectionId='32' Grid.Column="3" Grid.Row="2" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__19" Content="--" />
+            <Button x:ConnectionId='33' Grid.Column="3" Grid.Row="2" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__20" Content="--" />
+
+            <Button x:ConnectionId='34' Grid.Column="4" Grid.Row="2" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c0074" Content="t"/>
+            <Button x:ConnectionId='35' Grid.Column="4" Grid.Row="2" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0064" Content="d"/>
+
+            <Button x:ConnectionId='36' Grid.Column="5" Grid.Row="2" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__21" Content="--" />
+            <Button x:ConnectionId='37' Grid.Column="5" Grid.Row="2" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__22" Content="--" />
+
+            <Button x:ConnectionId='38' Grid.Column="6" Grid.Row="2" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c0288" Content="ʈ"/>
+            <Button x:ConnectionId='39' Grid.Column="6" Grid.Row="2" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0256" Content="ɖ"/>
+
+            <Button x:ConnectionId='40' Grid.Column="7" Grid.Row="2" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c0063" Content="c"/>
+            <Button x:ConnectionId='41' Grid.Column="7" Grid.Row="2" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c025f" Content="ɟ"/>
+
+            <Button x:ConnectionId='42' Grid.Column="8" Grid.Row="2" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c006b" Content="k"/>
+            <Button x:ConnectionId='43' Grid.Column="8" Grid.Row="2" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0261" Content="ɡ"/>
+
+            <Button x:ConnectionId='44' Grid.Column="9" Grid.Row="2" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c0071" Content="q"/>
+            <Button x:ConnectionId='45' Grid.Column="9" Grid.Row="2" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0047" Content="G"/>
+
+            <Button x:ConnectionId='46' Grid.Column="10" Grid.Row="2" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__23" Content="--" />
+            <Button x:ConnectionId='47' Grid.Column="10" Grid.Row="2" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__24" Content="--" />
+
+            <Button x:ConnectionId='48' Grid.Column="11" Grid.Row="2" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c0294" Content="ʔ"/>
+            <Button x:ConnectionId='49' Grid.Column="11" Grid.Row="2" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__25" Content="--" />
+
+            <Button x:ConnectionId='50' Grid.Column="1" Grid.Row="3" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__26" Content="--" />
+            <Button x:ConnectionId='51' Grid.Column="1" Grid.Row="3" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__27" Content="--" />
+
+            <Button x:ConnectionId='52' Grid.Column="2" Grid.Row="3" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c____" Content="pf"/>
+            <Button x:ConnectionId='53' Grid.Column="2" Grid.Row="3" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__28" Content="--" />
+
+            <Button x:ConnectionId='54' Grid.Column="3" Grid.Row="3" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__29" Content="--" />
+            <Button x:ConnectionId='55' Grid.Column="3" Grid.Row="3" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__30" Content="--" />
+
+            <Button x:ConnectionId='56' Grid.Column="4" Grid.Row="3" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c02a6" Content="ts"/>
+            <Button x:ConnectionId='57' Grid.Column="4" Grid.Row="3" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c02a3" Content="dz"/>
+
+            <Button x:ConnectionId='58' Grid.Column="5" Grid.Row="3" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c02a7" Content="ʧ"/>
+            <Button x:ConnectionId='59' Grid.Column="5" Grid.Row="3" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c02a4" Content="ʤ"/>
+
+            <Button x:ConnectionId='60' Grid.Column="6" Grid.Row="3" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__31" Content="--" />
+            <Button x:ConnectionId='61' Grid.Column="6" Grid.Row="3" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__32" Content="--" />
+
+            <Button x:ConnectionId='62' Grid.Column="7" Grid.Row="3" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__33" Content="--" />
+            <Button x:ConnectionId='63' Grid.Column="7" Grid.Row="3" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__33_2" Content="--" />
+
+            <Button x:ConnectionId='64' Grid.Column="8" Grid.Row="3" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__34" Content="--" />
+            <Button x:ConnectionId='65' Grid.Column="8" Grid.Row="3" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__35" Content="--" />
+
+            <Button x:ConnectionId='66' Grid.Column="9" Grid.Row="3" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__36" Content="--" />
+            <Button x:ConnectionId='67' Grid.Column="9" Grid.Row="3" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__37" Content="--" />
+
+            <Button x:ConnectionId='68' Grid.Column="10" Grid.Row="3" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__38" Content="--" />
+            <Button x:ConnectionId='69' Grid.Column="10" Grid.Row="3" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__39" Content="--" />
+
+            <Button x:ConnectionId='70' Grid.Column="11" Grid.Row="3" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__40" Content="--" />
+            <Button x:ConnectionId='71' Grid.Column="11" Grid.Row="3" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__41" Content="--" />
+
+            <Button x:ConnectionId='72' Grid.Column="1" Grid.Row="4" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c0278" Content="ɸ"/>
+            <Button x:ConnectionId='73' Grid.Column="1" Grid.Row="4" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c03b2" Content="β"/>
+
+            <Button x:ConnectionId='74' Grid.Column="2" Grid.Row="4" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c0066" Content="f"/>
+            <Button x:ConnectionId='75' Grid.Column="2" Grid.Row="4" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0076" Content="v"/>
+
+            <Button x:ConnectionId='76' Grid.Column="3" Grid.Row="4" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c03b8" Content="θ"/>
+            <Button x:ConnectionId='77' Grid.Column="3" Grid.Row="4" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c00f0" Content="ð"/>
+
+            <Button x:ConnectionId='78' Grid.Column="4" Grid.Row="4" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c0073" Content="s"/>
+            <Button x:ConnectionId='79' Grid.Column="4" Grid.Row="4" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c007a" Content="z"/>
+
+            <Button x:ConnectionId='80' Grid.Column="5" Grid.Row="4" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c0283" Content="ʃ"/>
+            <Button x:ConnectionId='81' Grid.Column="5" Grid.Row="4" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0292" Content="ʒ"/>
+
+            <Button x:ConnectionId='82' Grid.Column="6" Grid.Row="4" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c0282" Content="ʂ"/>
+            <Button x:ConnectionId='83' Grid.Column="6" Grid.Row="4" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0290" Content="ʐ"/>
+
+            <Button x:ConnectionId='84' Grid.Column="7" Grid.Row="4" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c00e7" Content="ç"/>
+            <Button x:ConnectionId='85' Grid.Column="7" Grid.Row="4" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c029d" Content="ʝ"/>
+
+            <Button x:ConnectionId='86' Grid.Column="8" Grid.Row="4" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c0078" Content="x"/>
+            <Button x:ConnectionId='87' Grid.Column="8" Grid.Row="4" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0263" Content="ɣ"/>
+
+            <Button x:ConnectionId='88' Grid.Column="9" Grid.Row="4" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c03c7" Content="χ"/>
+            <Button x:ConnectionId='89' Grid.Column="9" Grid.Row="4" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0281" Content="ʁ"/>
+
+            <Button x:ConnectionId='90' Grid.Column="10" Grid.Row="4" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c0127" Content="ħ"/>
+            <Button x:ConnectionId='91' Grid.Column="10" Grid.Row="4" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0295" Content="ʕ"/>
+
+            <Button x:ConnectionId='92' Grid.Column="11" Grid.Row="4" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c0068" Content="h"/>
+            <Button x:ConnectionId='93' Grid.Column="11" Grid.Row="4" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0266" Content="ɦ"/>
+
+            <Button x:ConnectionId='94' Grid.Column="1" Grid.Row="5" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__42" Content="--" />
+            <Button x:ConnectionId='95' Grid.Column="1" Grid.Row="5" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__43" Content="--" />
+
+            <Button x:ConnectionId='96' Grid.Column="2" Grid.Row="5" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__44" Content="--" />
+            <Button x:ConnectionId='97' Grid.Column="2" Grid.Row="5" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__45" Content="--" />
+
+            <Button x:ConnectionId='98' Grid.Column="3" Grid.Row="5" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__46" Content="--" />
+            <Button x:ConnectionId='99' Grid.Column="3" Grid.Row="5" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__47" Content="--" />
+
+            <Button x:ConnectionId='100' Grid.Column="4" Grid.Row="5" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c026c" Content="ɬ"/>
+            <Button x:ConnectionId='101' Grid.Column="4" Grid.Row="5" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c026e" Content="ɮ"/>
+
+            <Button x:ConnectionId='102' Grid.Column="5" Grid.Row="5" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__48" Content="--" />
+            <Button x:ConnectionId='103' Grid.Column="5" Grid.Row="5" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__49" Content="--" />
+
+            <Button x:ConnectionId='104' Grid.Column="6" Grid.Row="5" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__50" Content="--" />
+            <Button x:ConnectionId='105' Grid.Column="6" Grid.Row="5" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__51" Content="--" />
+
+            <Button x:ConnectionId='106' Grid.Column="7" Grid.Row="5" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__52" Content="--" />
+            <Button x:ConnectionId='107' Grid.Column="7" Grid.Row="5" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__53" Content="--" />
+
+            <Button x:ConnectionId='108' Grid.Column="8" Grid.Row="5" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__54" Content="--" />
+            <Button x:ConnectionId='109' Grid.Column="8" Grid.Row="5" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__55" Content="--" />
+
+            <Button x:ConnectionId='110' Grid.Column="9" Grid.Row="5" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__56" Content="--" />
+            <Button x:ConnectionId='111' Grid.Column="9" Grid.Row="5" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__57" Content="--" />
+
+            <Button x:ConnectionId='112' Grid.Column="10" Grid.Row="5" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__58" Content="--" />
+            <Button x:ConnectionId='113' Grid.Column="10" Grid.Row="5" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__59" Content="--" />
+
+            <Button x:ConnectionId='114' Grid.Column="11" Grid.Row="5" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__60" Content="--" />
+            <Button x:ConnectionId='115' Grid.Column="11" Grid.Row="5" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__61" Content="--" />
+
+            <Button x:ConnectionId='116' Grid.Column="1" Grid.Row="6" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__62" Content="--" />
+            <Button x:ConnectionId='117' Grid.Column="1" Grid.Row="6" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0042" Content="B"/>
+
+            <Button x:ConnectionId='118' Grid.Column="2" Grid.Row="6" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__63" Content="--" />
+            <Button x:ConnectionId='119' Grid.Column="2" Grid.Row="6" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__64" Content="--" />
+
+            <Button x:ConnectionId='120' Grid.Column="3" Grid.Row="6" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__65" Content="--" />
+            <Button x:ConnectionId='121' Grid.Column="3" Grid.Row="6" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__66" Content="--" />
+
+            <Button x:ConnectionId='122' Grid.Column="4" Grid.Row="6" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__67" Content="--" />
+            <Button x:ConnectionId='123' Grid.Column="4" Grid.Row="6" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0072" Content="r"/>
+
+            <Button x:ConnectionId='124' Grid.Column="5" Grid.Row="6" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__68" Content="--" />
+            <Button x:ConnectionId='125' Grid.Column="5" Grid.Row="6" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__69" Content="--" />
+
+            <Button x:ConnectionId='126' Grid.Column="6" Grid.Row="6" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__70" Content="--" />
+            <Button x:ConnectionId='127' Grid.Column="6" Grid.Row="6" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__71" Content="--" />
+
+            <Button x:ConnectionId='128' Grid.Column="7" Grid.Row="6" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__72" Content="--" />
+            <Button x:ConnectionId='129' Grid.Column="7" Grid.Row="6" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__73" Content="--" />
+
+            <Button x:ConnectionId='130' Grid.Column="8" Grid.Row="6" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__74" Content="--" />
+            <Button x:ConnectionId='131' Grid.Column="8" Grid.Row="6" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__75" Content="--" />
+
+            <Button x:ConnectionId='132' Grid.Column="9" Grid.Row="6" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__76" Content="--" />
+            <Button x:ConnectionId='133' Grid.Column="9" Grid.Row="6" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0052" Content="R"/>
+
+            <Button x:ConnectionId='134' Grid.Column="10" Grid.Row="6" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__77" Content="--" />
+            <Button x:ConnectionId='135' Grid.Column="10" Grid.Row="6" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__78" Content="--" />
+
+            <Button x:ConnectionId='136' Grid.Column="11" Grid.Row="6" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__79" Content="--" />
+            <Button x:ConnectionId='137' Grid.Column="11" Grid.Row="6" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__80" Content="--" />
+
+            <Button x:ConnectionId='138' Grid.Column="1" Grid.Row="7" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__81" Content="--" />
+            <Button x:ConnectionId='139' Grid.Column="1" Grid.Row="7" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__82" Content="--" />
+
+            <Button x:ConnectionId='140' Grid.Column="2" Grid.Row="7" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__83" Content="--" />
+            <Button x:ConnectionId='141' Grid.Column="2" Grid.Row="7" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c2c71" Content="ⱱ"/>
+
+            <Button x:ConnectionId='142' Grid.Column="3" Grid.Row="7" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__84" Content="--" />
+            <Button x:ConnectionId='143' Grid.Column="3" Grid.Row="7" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__85" Content="--" />
+
+            <Button x:ConnectionId='144' Grid.Column="4" Grid.Row="7" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__86" Content="--" />
+            <Button x:ConnectionId='145' Grid.Column="4" Grid.Row="7" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c027e" Content="ɾ"/>
+
+            <Button x:ConnectionId='146' Grid.Column="5" Grid.Row="7" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__87" Content="--" />
+            <Button x:ConnectionId='147' Grid.Column="5" Grid.Row="7" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__88" Content="--" />
+
+            <Button x:ConnectionId='148' Grid.Column="6" Grid.Row="7" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__89" Content="--" />
+            <Button x:ConnectionId='149' Grid.Column="6" Grid.Row="7" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c027d" Content="ɽ"/>
+
+            <Button x:ConnectionId='150' Grid.Column="7" Grid.Row="7" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__90" Content="--" />
+            <Button x:ConnectionId='151' Grid.Column="7" Grid.Row="7" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__91" Content="--" />
+
+            <Button x:ConnectionId='152' Grid.Column="8" Grid.Row="7" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__92" Content="--" />
+            <Button x:ConnectionId='153' Grid.Column="8" Grid.Row="7" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__93" Content="--" />
+
+            <Button x:ConnectionId='154' Grid.Column="9" Grid.Row="7" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__94" Content="--" />
+            <Button x:ConnectionId='155' Grid.Column="9" Grid.Row="7" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__95" Content="--" />
+
+            <Button x:ConnectionId='156' Grid.Column="10" Grid.Row="7" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__96" Content="--" />
+            <Button x:ConnectionId='157' Grid.Column="10" Grid.Row="7" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__97" Content="--" />
+
+            <Button x:ConnectionId='158' Grid.Column="11" Grid.Row="7" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__98" Content="--" />
+            <Button x:ConnectionId='159' Grid.Column="11" Grid.Row="7" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__99" Content="--" />
+
+            <Button x:ConnectionId='160' Grid.Column="1" Grid.Row="8" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__101" Content="--" />
+            <Button x:ConnectionId='161' Grid.Column="1" Grid.Row="8" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__102" Content="--" />
+
+            <Button x:ConnectionId='162' Grid.Column="2" Grid.Row="8" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__103" Content="--" />
+            <Button x:ConnectionId='163' Grid.Column="2" Grid.Row="8" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c028b" Content="ʋ"/>
+
+            <Button x:ConnectionId='164' Grid.Column="3" Grid.Row="8" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__104" Content="--" />
+            <Button x:ConnectionId='165' Grid.Column="3" Grid.Row="8" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__105" Content="--" />
+
+            <Button x:ConnectionId='166' Grid.Column="4" Grid.Row="8" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__106" Content="--" />
+            <Button x:ConnectionId='167' Grid.Column="4" Grid.Row="8" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0279" Content="ɹ"/>
+
+            <Button x:ConnectionId='168' Grid.Column="5" Grid.Row="8" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__107" Content="--" />
+            <Button x:ConnectionId='169' Grid.Column="5" Grid.Row="8" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__108" Content="--" />
+
+            <Button x:ConnectionId='170' Grid.Column="6" Grid.Row="8" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__109" Content="--" />
+            <Button x:ConnectionId='171' Grid.Column="6" Grid.Row="8" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c027b" Content="ɻ"/>
+
+            <Button x:ConnectionId='172' Grid.Column="7" Grid.Row="8" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c0265" Content="ɥ"/>
+            <Button x:ConnectionId='173' Grid.Column="7" Grid.Row="8" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c006a" Content="j"/>
+
+            <Button x:ConnectionId='174' Grid.Column="8" Grid.Row="8" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c0077" Content="w"/>
+            <Button x:ConnectionId='175' Grid.Column="8" Grid.Row="8" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c0270" Content="ɰ"/>
+
+            <Button x:ConnectionId='176' Grid.Column="9" Grid.Row="8" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__110" Content="--" />
+            <Button x:ConnectionId='177' Grid.Column="9" Grid.Row="8" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__111" Content="--" />
+
+            <Button x:ConnectionId='178' Grid.Column="10" Grid.Row="8" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__112" Content="--" />
+            <Button x:ConnectionId='179' Grid.Column="10" Grid.Row="8" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__113" Content="--" />
+
+            <Button x:ConnectionId='180' Grid.Column="11" Grid.Row="8" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__114" Content="--" />
+            <Button x:ConnectionId='181' Grid.Column="11" Grid.Row="8" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__115" Content="--" />
+
+            <Button x:ConnectionId='182' Grid.Column="1" Grid.Row="9" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__116" Content="--" />
+            <Button x:ConnectionId='183' Grid.Column="1" Grid.Row="9" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__117" Content="--" />
+
+            <Button x:ConnectionId='184' Grid.Column="2" Grid.Row="9" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__118" Content="--" />
+            <Button x:ConnectionId='185' Grid.Column="2" Grid.Row="9" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__119" Content="--" />
+
+            <Button x:ConnectionId='186' Grid.Column="3" Grid.Row="9" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__120" Content="--" />
+            <Button x:ConnectionId='187' Grid.Column="3" Grid.Row="9" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__121" Content="--" />
+
+            <Button x:ConnectionId='188' Grid.Column="4" Grid.Row="9" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__122" Content="--" />
+            <Button x:ConnectionId='189' Grid.Column="4" Grid.Row="9" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c006c" Content="l"/>
+
+            <Button x:ConnectionId='190' Grid.Column="5" Grid.Row="9" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__123" Content="--" />
+            <Button x:ConnectionId='191' Grid.Column="5" Grid.Row="9" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__124" Content="--" />
+
+            <Button x:ConnectionId='192' Grid.Column="6" Grid.Row="9" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__125" Content="--" />
+            <Button x:ConnectionId='193' Grid.Column="6" Grid.Row="9" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c026d" Content="ɭ"/>
+
+            <Button x:ConnectionId='194' Grid.Column="7" Grid.Row="9" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__126" Content="--" />
+            <Button x:ConnectionId='195' Grid.Column="7" Grid.Row="9" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c028e" Content="ʎ"/>
+
+            <Button x:ConnectionId='196' Grid.Column="8" Grid.Row="9" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__127" Content="--" />
+            <Button x:ConnectionId='197' Grid.Column="8" Grid.Row="9" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c024c" Content="L"/>
+
+            <Button x:ConnectionId='198' Grid.Column="9" Grid.Row="9" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__128" Content="--" />
+            <Button x:ConnectionId='199' Grid.Column="9" Grid.Row="9" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__129" Content="--" />
+
+            <Button x:ConnectionId='200' Grid.Column="10" Grid.Row="9" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__130" Content="--" />
+            <Button x:ConnectionId='201' Grid.Column="10" Grid.Row="9" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__131" Content="--" />
+
+            <Button x:ConnectionId='202' Grid.Column="11" Grid.Row="9" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__132" Content="--" />
+            <Button x:ConnectionId='203' Grid.Column="11" Grid.Row="9" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__133" Content="--" />
+
+            <Button x:ConnectionId='204' Grid.Column="1" Grid.Row="10" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__134" Content="ʼ" />
+            <Button x:ConnectionId='205' Grid.Column="1" Grid.Row="10" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__135" Content="ʻ" />
+
+            <Button x:ConnectionId='206' Grid.Column="2" Grid.Row="10" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__136" Content="̥" />
+            <Button x:ConnectionId='207' Grid.Column="2" Grid.Row="10" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__137" Content="̬" />
+
+            <Button x:ConnectionId='208' Grid.Column="3" Grid.Row="10" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__138" Content="°" />
+            <Button x:ConnectionId='209' Grid.Column="3" Grid.Row="10" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__139" Content="--" />
+
+            <Button x:ConnectionId='210' Grid.Column="4" Grid.Row="10" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__140" Content="ʰ" />
+            <Button x:ConnectionId='211' Grid.Column="4" Grid.Row="10" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__141" Content="--" />
+
+            <Button x:ConnectionId='212' Grid.Column="5" Grid.Row="10" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__142" Content="̹" />
+            <Button x:ConnectionId='213' Grid.Column="5" Grid.Row="10" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__143" Content="̜" />
+
+            <Button x:ConnectionId='214' Grid.Column="6" Grid.Row="10" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__144" Content="̟" />
+            <Button x:ConnectionId='215' Grid.Column="6" Grid.Row="10" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__145" Content="̠" />
+
+            <Button x:ConnectionId='216' Grid.Column="7" Grid.Row="10" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__146" Content="̈" />
+            <Button x:ConnectionId='217' Grid.Column="7" Grid.Row="10" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__147" Content="̽" />
+
+            <Button x:ConnectionId='218' Grid.Column="8" Grid.Row="10" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__148" Content="̩" />
+            <Button x:ConnectionId='219' Grid.Column="8" Grid.Row="10" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__149" Content="̯" />
+
+            <Button x:ConnectionId='220' Grid.Column="9" Grid.Row="10" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__150" Content="ʴ" />
+            <Button x:ConnectionId='221' Grid.Column="9" Grid.Row="10" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__151" Content="̤" />
+
+            <Button x:ConnectionId='222' Grid.Column="10" Grid.Row="10" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__152" Content="̤" />
+            <Button x:ConnectionId='223' Grid.Column="10" Grid.Row="10" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__153" Content="̰" />
+
+            <Button x:ConnectionId='224' Grid.Column="11" Grid.Row="10" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__154" Content="̼" />
+            <Button x:ConnectionId='225' Grid.Column="11" Grid.Row="10" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__155" Content="--" />
+
+            <Button x:ConnectionId='226' Grid.Column="1" Grid.Row="11" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__156" Content="ʷ" />
+            <Button x:ConnectionId='227' Grid.Column="1" Grid.Row="11" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__157" Content="ʲ" />
+
+            <Button x:ConnectionId='228' Grid.Column="2" Grid.Row="11" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__158" Content="ˠ" />
+            <Button x:ConnectionId='229' Grid.Column="2" Grid.Row="11" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__159" Content="ˤ" />
+
+            <Button x:ConnectionId='230' Grid.Column="3" Grid.Row="11" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__160" Content="̪" />
+            <Button x:ConnectionId='231' Grid.Column="3" Grid.Row="11" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__161" Content="̺" />
+
+            <Button x:ConnectionId='232' Grid.Column="4" Grid.Row="11" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__162" Content="̻" />
+            <Button x:ConnectionId='233' Grid.Column="4" Grid.Row="11" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__163" Content="̃" />
+
+            <Button x:ConnectionId='234' Grid.Column="5" Grid.Row="11" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__164" Content="͡" />
+            <Button x:ConnectionId='235' Grid.Column="5" Grid.Row="11" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__165" Content="--" />
+
+            <Button x:ConnectionId='236' Grid.Column="6" Grid.Row="11" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__166" Content="ⁿ" />
+            <Button x:ConnectionId='237' Grid.Column="6" Grid.Row="11" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__167" Content="ˡ" />
+
+            <Button x:ConnectionId='238' Grid.Column="7" Grid.Row="11" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__168" Content="̚" />
+            <Button x:ConnectionId='239' Grid.Column="7" Grid.Row="11" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__169" Content="̴" />
+
+            <Button x:ConnectionId='240' Grid.Column="8" Grid.Row="11" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__170" Content="̝" />
+            <Button x:ConnectionId='241' Grid.Column="8" Grid.Row="11" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__171" Content="̞" />
+
+            <Button x:ConnectionId='242' Grid.Column="9" Grid.Row="11" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__172" Content="̘" />
+            <Button x:ConnectionId='243' Grid.Column="9" Grid.Row="11" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__173" Content="̙" />
+
+            <Button x:ConnectionId='244' Grid.Column="10" Grid.Row="11" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__174" Content="--" />
+            <Button x:ConnectionId='245' Grid.Column="10" Grid.Row="11" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__175" Content="--" />
+
+            <Button x:ConnectionId='246' Grid.Column="11" Grid.Row="11" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__176" Content="--" />
+            <Button x:ConnectionId='247' Grid.Column="11" Grid.Row="11" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__177" Content="--" />
+
+            <!--bottoni vocali-->
+            <Button x:ConnectionId='248' Grid.Column="12" Grid.Row="1" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_v0069" Content="i"/>
+            <Button x:ConnectionId='249' Grid.Column="12" Grid.Row="1" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__178" Content="--" />
+
+            <Button x:ConnectionId='250' Grid.Column="13" Grid.Row="1" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__179" Content="--" />
+            <Button x:ConnectionId='251' Grid.Column="13" Grid.Row="1" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_v0079" Content="y"/>
+
+            <Button x:ConnectionId='252' Grid.Column="14" Grid.Row="1" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_v0268" Content="ɨ"/>
+            <Button x:ConnectionId='253' Grid.Column="14" Grid.Row="1" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_v0289" Content="ʉ"/>
+
+            <Button x:ConnectionId='254' Grid.Column="15" Grid.Row="1" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_v026f" Content="ɯ"/>
+            <Button x:ConnectionId='255' Grid.Column="15" Grid.Row="1" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__180" Content="--" />
+
+            <Button x:ConnectionId='256' Grid.Column="16" Grid.Row="1" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__181" Content="--" />
+            <Button x:ConnectionId='257' Grid.Column="16" Grid.Row="1" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_v0075" Content="u"/>
+
+            <Button x:ConnectionId='258' Grid.Column="12" Grid.Row="2" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_v026a" Content="ɪ"/>
+            <Button x:ConnectionId='259' Grid.Column="12" Grid.Row="2" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__182" Content="--" />
+
+            <Button x:ConnectionId='260' Grid.Column="13" Grid.Row="2" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_v0269" Content="ɩ"/>
+            <!--carattere prob errato cod 0269-->
+            <Button x:ConnectionId='261' Grid.Column="13" Grid.Row="2" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_v028f" Content="ʏ"/>
+
+            <Button x:ConnectionId='262' Grid.Column="14" Grid.Row="2" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__183" Content="--" />
+            <Button x:ConnectionId='263' Grid.Column="14" Grid.Row="2" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__184" Content="--" />
+
+            <Button x:ConnectionId='264' Grid.Column="15" Grid.Row="2" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__185" Content="--" />
+            <Button x:ConnectionId='265' Grid.Column="15" Grid.Row="2" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__186" Content="--" />
+
+            <Button x:ConnectionId='266' Grid.Column="16" Grid.Row="2" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__187" Content="--" />
+            <Button x:ConnectionId='267' Grid.Column="16" Grid.Row="2" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_v028a" Content="ʊ"/>
+
+            <Button x:ConnectionId='268' Grid.Column="12" Grid.Row="3" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_v0065" Content="e"/>
+            <Button x:ConnectionId='269' Grid.Column="12" Grid.Row="3" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__188" Content="--" />
+
+            <Button x:ConnectionId='270' Grid.Column="13" Grid.Row="3" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_v0258" Content="ɘ"/>
+            <Button x:ConnectionId='271' Grid.Column="13" Grid.Row="3" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_v00f8" Content="ø"/>
+
+            <Button x:ConnectionId='272' Grid.Column="14" Grid.Row="3" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_v0259" Content="ə"/>
+            <Button x:ConnectionId='273' Grid.Column="14" Grid.Row="3" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_v0275" Content="ɵ"/>
+
+            <Button x:ConnectionId='274' Grid.Column="15" Grid.Row="3" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_v0264" Content="ɤ"/>
+            <Button x:ConnectionId='275' Grid.Column="15" Grid.Row="3" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__189" Content="--" />
+
+            <Button x:ConnectionId='276' Grid.Column="16" Grid.Row="3" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__190" Content="--" />
+            <Button x:ConnectionId='277' Grid.Column="16" Grid.Row="3" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_v006f" Content="o"/>
+
+            <Button x:ConnectionId='278' Grid.Column="12" Grid.Row="4" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__191" Content="--" />
+            <Button x:ConnectionId='279' Grid.Column="12" Grid.Row="4" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__192" Content="--" />
+
+            <Button x:ConnectionId='280' Grid.Column="13" Grid.Row="4" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__193" Content="--" />
+            <Button x:ConnectionId='281' Grid.Column="13" Grid.Row="4" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__194" Content="--" />
+
+            <Button x:ConnectionId='282' Grid.Column="14" Grid.Row="4" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_v025c" Content="ɜ"/>
+            <Button x:ConnectionId='283' Grid.Column="14" Grid.Row="4" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_v025e" Content="ɞ"/>
+
+            <Button x:ConnectionId='284' Grid.Column="15" Grid.Row="4" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__195" Content="--" />
+            <Button x:ConnectionId='285' Grid.Column="15" Grid.Row="4" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__196" Content="--" />
+
+            <Button x:ConnectionId='286' Grid.Column="16" Grid.Row="4" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__197" Content="--" />
+            <Button x:ConnectionId='287' Grid.Column="16" Grid.Row="4" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__198" Content="--" />
+
+            <Button x:ConnectionId='288' Grid.Column="12" Grid.Row="5" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_v025b" Content="ɛ"/>
+            <Button x:ConnectionId='289' Grid.Column="12" Grid.Row="5" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__199" Content="--" />
+
+            <Button x:ConnectionId='290' Grid.Column="13" Grid.Row="5" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__200" Content="--" />
+            <Button x:ConnectionId='291' Grid.Column="13" Grid.Row="5" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_v0153" Content="œ"/>
+
+            <Button x:ConnectionId='292' Grid.Column="14" Grid.Row="5" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_v0250" Content="ɐ"/>
+            <Button x:ConnectionId='293' Grid.Column="14" Grid.Row="5" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__201" Content="--" />
+
+            <Button x:ConnectionId='294' Grid.Column="15" Grid.Row="5" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_v028c" Content="ʌ"/>
+            <Button x:ConnectionId='295' Grid.Column="15" Grid.Row="5" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__202" Content="--" />
+
+            <Button x:ConnectionId='296' Grid.Column="16" Grid.Row="5" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__203" Content="--" />
+            <Button x:ConnectionId='297' Grid.Column="16" Grid.Row="5" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_v0254" Content="ɔ"/>
+
+            <Button x:ConnectionId='298' Grid.Column="12" Grid.Row="6" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_v00e6" Content="æ"/>
+            <Button x:ConnectionId='299' Grid.Column="12" Grid.Row="6" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__204" Content="--" />
+
+            <Button x:ConnectionId='300' Grid.Column="13" Grid.Row="6" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__205" Content="--" />
+            <Button x:ConnectionId='301' Grid.Column="13" Grid.Row="6" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_v0276" Content="ɶ"/>
+
+            <Button x:ConnectionId='302' Grid.Column="14" Grid.Row="6" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_v0061" Content="a"/>
+            <Button x:ConnectionId='303' Grid.Column="14" Grid.Row="6" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__206" Content="--" />
+
+            <Button x:ConnectionId='304' Grid.Column="15" Grid.Row="6" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_v0251" Content="ɑ"/>
+            <Button x:ConnectionId='305' Grid.Column="15" Grid.Row="6" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__207" Content="--" />
+
+            <Button x:ConnectionId='306' Grid.Column="16" Grid.Row="6" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__208" Content="--" />
+            <Button x:ConnectionId='307' Grid.Column="16" Grid.Row="6" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_v0252" Content="ɒ"/>
+
+            <Button x:ConnectionId='308' Grid.Column="12" Grid.Row="7" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__209" Content="ˈ" />
+            <Button x:ConnectionId='309' Grid.Column="12" Grid.Row="7" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__210" Content="ˌ" />
+
+            <Button x:ConnectionId='310' Grid.Column="13" Grid.Row="7" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__211" Content="ː" />
+            <Button x:ConnectionId='311' Grid.Column="13" Grid.Row="7" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__212" Content="ˑ" />
+
+            <Button x:ConnectionId='312' Grid.Column="14" Grid.Row="7" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__213" Content="̆" />
+            <Button x:ConnectionId='313' Grid.Column="14" Grid.Row="7" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__214" Content="." />
+
+            <Button x:ConnectionId='314' Grid.Column="15" Grid.Row="7" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__215" Content="|" />
+            <Button x:ConnectionId='315' Grid.Column="15" Grid.Row="7" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__216" Content="‖" />
+
+            <Button x:ConnectionId='316' Grid.Column="16" Grid.Row="7" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__217" Content="‿" />
+            <Button x:ConnectionId='317' Grid.Column="16" Grid.Row="7" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__218" Content="--" />
+
+            <Button x:ConnectionId='318' Grid.Column="12" Grid.Row="8" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__219" Content="˥" />
+            <Button x:ConnectionId='319' Grid.Column="12" Grid.Row="8" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__220" Content="˦" />
+
+            <Button x:ConnectionId='320' Grid.Column="13" Grid.Row="8" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__221" Content="˧" />
+            <Button x:ConnectionId='321' Grid.Column="13" Grid.Row="8" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__222" Content="˨" />
+
+            <Button x:ConnectionId='322' Grid.Column="14" Grid.Row="8" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__223" Content="˩" />
+            <Button x:ConnectionId='323' Grid.Column="14" Grid.Row="8" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__224" Content="--" />
+
+            <Button x:ConnectionId='324' Grid.Column="15" Grid.Row="8" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__225" Content="↑" />
+            <Button x:ConnectionId='325' Grid.Column="15" Grid.Row="8" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__226" Content="↓" />
+
+            <Button x:ConnectionId='326' Grid.Column="16" Grid.Row="8" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__227" Content="↗" />
+            <Button x:ConnectionId='327' Grid.Column="16" Grid.Row="8" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__228" Content="↘" />
+
+            <Button x:ConnectionId='328' Grid.Column="12" Grid.Row="9" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__229" Content="₀" />
+            <Button x:ConnectionId='329' Grid.Column="12" Grid.Row="9" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__230" Content="₁" />
+
+            <Button x:ConnectionId='330' Grid.Column="13" Grid.Row="9" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__231" Content="₂" />
+            <Button x:ConnectionId='331' Grid.Column="13" Grid.Row="9" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__232" Content="₃" />
+
+            <Button x:ConnectionId='332' Grid.Column="14" Grid.Row="9" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__233" Content="₄" />
+            <Button x:ConnectionId='333' Grid.Column="14" Grid.Row="9" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__234" Content="₅" />
+
+            <Button x:ConnectionId='334' Grid.Column="15" Grid.Row="9" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__235" Content="₆" />
+            <Button x:ConnectionId='335' Grid.Column="15" Grid.Row="9" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__236" Content="₇" />
+
+            <Button x:ConnectionId='336' Grid.Column="16" Grid.Row="9" FontSize="17"  Visibility="Visible"                      Style="{StaticResource _bt_fono}" x:Name="_c__237" Content="₈" />
+            <Button x:ConnectionId='337' Grid.Column="16" Grid.Row="9" FontSize="17"  Visibility="Collapsed"                      Style="{StaticResource _bt_fono}" x:Name="_c__238" Content="₉" />
+
+            <!--Bottoni funzionalità-->
+            <Button x:ConnectionId='338' x:Name="_btBacks" Grid.Column="1" Padding="5" Grid.Row="0" Grid.ColumnSpan="2" FontSize="14" HorizontalAlignment="Center"                       Style="{StaticResource BtControl}" >
+                <StackPanel>
+                    <Image Source="Assets/backs.png" Height="20" Width="30"/>
+                </StackPanel>
+            </Button>
+            <Button x:ConnectionId='339' x:Name="_btSpazio" x:Uid="btSpazio" Padding="5" Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="2" FontSize="14" HorizontalAlignment="Center"                        Style="{StaticResource BtControl}" Content="Spazio"/>
+            <Button x:ConnectionId='340' x:Name="_btInvio" Padding="5" Grid.Column="5" Grid.Row="0"  FontSize="14" Grid.ColumnSpan="2" HorizontalAlignment="Center"                       Style="{StaticResource BtControl}" >
+                <StackPanel>
+                    <Image Source="Assets/invio.png" Height="30" Width="30"/>
+                </StackPanel>
+            </Button>
+            <Button x:ConnectionId='341' x:Name="_btShift" Grid.Column="12" Grid.Row="10"  FontSize="14" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalAlignment="Center"                       Style="{StaticResource BtControl}">
+                <StackPanel>
+                    <Image Source="Assets/shiftW.png" Height="35" Width="35"/>
+                </StackPanel>
+            </Button>
+
+            <!--Bottoni frecce-->
+                <Button x:ConnectionId='342' x:Name="_btSu" Grid.Column="15" Grid.Row="10" FontSize="14" Padding="0" HorizontalAlignment="Center"                    Style="{StaticResource BtControl}">
+                    <StackPanel>
+                        <Image Source="Assets/btSu.png" Height="20" Width="20"/>
+                    </StackPanel>
+                </Button>
+                <Button x:ConnectionId='343' x:Name="_btGiu" Grid.Column="15" Grid.Row="11" FontSize="14" Padding="0" HorizontalAlignment="Center"                     Style="{StaticResource BtControl}">
+                    <StackPanel>
+                        <Image Source="Assets/btGiu.png" Height="20" Width="20"/>
+                    </StackPanel>
+                </Button>
+                <Button x:ConnectionId='344' x:Name="_btDx" Grid.Column="16" Grid.Row="11" FontSize="14" Padding="0" HorizontalAlignment="Center"                    Style="{StaticResource BtControl}">
+                    <StackPanel>
+                        <Image Source="Assets/btDx.png" Height="20" Width="20"/>
+                    </StackPanel>
+                </Button>
+            <Button x:ConnectionId='345' x:Name="_btSx" Grid.Column="14" Grid.Row="11" Padding="0" HorizontalAlignment="Center"                    Style="{StaticResource BtControl}">
+                <StackPanel>
+                    <Image Source="Assets/btSx.png" Height="20" Width="20"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+    </Grid>
+</Page>
+

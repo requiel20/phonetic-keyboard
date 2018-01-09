@@ -1,0 +1,30 @@
+﻿<SettingsFlyout
+    x:Class="Tastiera_Fonetica.SettingsFlyout"
+    x:Uid="SettingsFlyout"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tastiera_Fonetica"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    IconSource="Assets/SmallLogo.png"
+    Title="Settings"
+    d:DesignWidth="346">
+
+    <!-- Questo elemento StackPanel funge da pannello radice per il layout verticale delle sezioni di contenuto -->
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+
+        <!-- L'elemento StackPanel(s) riportato di seguito definisce le sezioni di contenuto -->
+
+        <!-- Sezione 1 contenuto-->
+        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+
+            <!-- Intestazione sezione 1 -->
+            <TextBlock x:Uid="tbVirtualKeyb" Foreground="{StaticResource TestoOpzioni}" FontWeight="Medium" FontSize="15" Text="C'è una tastiera fisica collegata?"/>
+
+            <!-- Corpo sezione 1 -->
+            <ToggleSwitch x:Name="tsTast" x:Uid="tsTast" Foreground="{StaticResource TestoOpzioni}" FontWeight="SemiLight" IsOn="{Binding Mode=TwoWay}" Toggled="tsTast_Toggled" OnContent="Si" OffContent="No"/>
+
+        </StackPanel>
+    </StackPanel>
+</SettingsFlyout>

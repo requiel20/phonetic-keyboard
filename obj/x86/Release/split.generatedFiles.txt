@@ -1,0 +1,4 @@
+obj\x86\Release\split.pri
+obj\x86\Release\split.map.txt
+obj\x86\Release\split.language-it.pri
+obj\x86\Release\split.language-it.map.txt

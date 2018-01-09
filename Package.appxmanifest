@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="47313MLMdev.PhoneticKeyboard" Publisher="CN=BAF36D30-35BD-4626-88F6-A9BAEBED5DB4" Version="1.1.0.14" />
+  <Properties>
+    <DisplayName>Phonetic Keyboard</DisplayName>
+    <PublisherDisplayName>MLMdev</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Tastiera_Fonetica.App">
+      <m2:VisualElements DisplayName="Phonetic Keyboard" Square150x150Logo="Assets\Square150x150Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Phonetic Keyboard" ForegroundText="light" BackgroundColor="#1ba1e2">
+        <m2:DefaultTile ShortName="Tastiera fonetica">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+</Package>

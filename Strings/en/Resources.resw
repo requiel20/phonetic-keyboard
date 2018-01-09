@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="cbPlay.Content" xml:space="preserve">
+    <value>Listen to each phone when pressing a key</value>
+  </data>
+  <data name="beforestarting.Text" xml:space="preserve">
+    <value>Before starting we need an important information</value>
+  </data>
+  <data name="howtogo.Content" xml:space="preserve">
+    <value>How to go to the settings menu</value>
+  </data>
+  <data name="ifyouchange.Text" xml:space="preserve">
+    <value>If you change your mind this can be toggled in settings menu</value>
+  </data>
+  <data name="btNo.Content" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="welcome.Text" xml:space="preserve">
+    <value>Welcome to your phonetic keyboard</value>
+  </data>
+  <data name="whatis.Content" xml:space="preserve">
+    <value>What is a physical keyboard</value>
+  </data>
+  <data name="btSi.Content" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="doesyoursystem.Text" xml:space="preserve">
+    <value>Does your system have a physical keyboard?</value>
+  </data>
+  <data name="tbVirtualKeyb.Text" xml:space="preserve">
+    <value>There is a phisical keyboard connected?</value>
+  </data>
+  <data name="settingsheader.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="btShowBt.Content" xml:space="preserve">
+    <value>Hide the buttons</value>
+  </data>
+  <data name="btShowLab.Content" xml:space="preserve">
+    <value>Hide the labels</value>
+  </data>
+  <data name="mostraLab" xml:space="preserve">
+    <value>Show the labels</value>
+  </data>
+  <data name="nascondiLab" xml:space="preserve">
+    <value>Hide the labels</value>
+  </data>
+  <data name="tsTast.OffContent" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="tsTast.OnContent" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="mostraBt" xml:space="preserve">
+    <value>Show buttons</value>
+  </data>
+  <data name="nascondiBt" xml:space="preserve">
+    <value>Hide buttons</value>
+  </data>
+  <data name="consiglioTast" xml:space="preserve">
+    <value>For using this app correctly connecting a physical keyboard is recommended</value>
+  </data>
+  <data name="SettingsFlyout.Title" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="scrittaAttenzione" xml:space="preserve">
+    <value>Attention</value>
+  </data>
+  <data name="scrittaDocumentoWord" xml:space="preserve">
+    <value>Word document</value>
+  </data>
+  <data name="scrittaImpostazioni" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="scrittaNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="scrittaSalvato" xml:space="preserve">
+    <value>The document has been saved</value>
+  </data>
+  <data name="scrittaSi" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="scrittaVuoiSalvare" xml:space="preserve">
+    <value>Do you want to save what you were writing?</value>
+  </data>
+  <data name="tbColoreFont.Text" xml:space="preserve">
+    <value>Font Color</value>
+  </data>
+  <data name="tbCopy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="tbCut.Text" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="tbOpen.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="tbPaste.Text" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="tbSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btSpazio.Content" xml:space="preserve">
+    <value>Space</value>
+  </data>
+  <data name="cliccaimp1.Text" xml:space="preserve">
+    <value>Click on settings</value>
+  </data>
+  <data name="cliccaimp2.Text" xml:space="preserve">
+    <value>Click on settings</value>
+  </data>
+  <data name="howtogoTB.Text" xml:space="preserve">
+    <value>How to get to the settings menu</value>
+  </data>
+  <data name="lowerright.Text" xml:space="preserve">
+    <value>Move the pointer near the lower right corner of the screen, then go up</value>
+  </data>
+  <data name="nellaprecedente.Text" xml:space="preserve">
+    <value>In the question before answer yes if your system has a physical keboard like the fris one, otherwise answer no.</value>
+  </data>
+  <data name="sistemimonitor.Text" xml:space="preserve">
+    <value>Systems with a touchscreen monitor often aren't given with physical keyboards like this:</value>
+  </data>
+  <data name="swipe.Text" xml:space="preserve">
+    <value>or swipe the right side of the screen</value>
+  </data>
+  <data name="usanoinvece.Text" xml:space="preserve">
+    <value>Instead they use virtual keyboards which appears directly on the screen like this:</value>
+  </data>
+  <data name="whatisTB.Text" xml:space="preserve">
+    <value>What is a physical keyboard?</value>
+  </data>
+  <data name="scrittaComprato" xml:space="preserve">
+    <value>Thanks for buying the full version of the Phonetic Keyboard!! To see changes restart the app</value>
+  </data>
+  <data name="scrittaGrazie" xml:space="preserve">
+    <value>Thank you</value>
+  </data>
+  <data name="scrittaNewDoc" xml:space="preserve">
+    <value>New phonetic keyboard document</value>
+  </data>
+  <data name="scrittaPeriodoprova1" xml:space="preserve">
+    <value>Evaluation time will end in </value>
+  </data>
+  <data name="scrittaPeriodoprova2" xml:space="preserve">
+    <value> days</value>
+  </data>
+  <data name="tbTitoloDoc.Text" xml:space="preserve">
+    <value>Untitled.doc</value>
+  </data>
+  <data name="scrittaNoIncolla" xml:space="preserve">
+    <value>The content of the clipboard can't be pasted</value>
+  </data>
+  <data name="scrittaVocaliDisattivate" xml:space="preserve">
+    <value>In the trial version vowels ar disabled. Buy the full version to unlock this feature.</value>
+  </data>
+</root>

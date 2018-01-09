@@ -1,0 +1,710 @@
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlTypeInfo.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlSaveStateFile.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\App.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\CustomStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\StandardStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Intro.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\usercontrol.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.xr.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.exe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.pdb
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\resources.pri
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\AppxManifest.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.build.appxrecipe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.exe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.pdb
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\ProjectArchitectures.txt
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\App.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\CustomStyles.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\StandardStyles.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Intro.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\usercontrol.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.exe
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.pdb
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\resources.pri
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\AppxManifest.xml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.build.appxrecipe
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlSaveStateFile.xml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.exe
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.pdb
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml.intermediate
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles.intermediate
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles.intermediate
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles.intermediate
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt.intermediate
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (13)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\ProjectArchitectures.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\App.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\CustomStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\StandardStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Intro.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\usercontrol.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.xr.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.exe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.pdb
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\resources.pri
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\AppxManifest.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.build.appxrecipe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlTypeInfo.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlSaveStateFile.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.exe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.pdb
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1 - Copia\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\ProjectArchitectures.txt
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\App.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\CustomStyles.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\StandardStyles.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Intro.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\usercontrol.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.exe
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.pdb
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlSaveStateFile.xml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.exe
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.pdb
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\resources.pri
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\AppxManifest.xml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.build.appxrecipe
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml.intermediate
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles.intermediate
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles.intermediate
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles.intermediate
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt.intermediate
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (15)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\ProjectArchitectures.txt
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\App.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\CustomStyles.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\StandardStyles.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Howtogo.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Intro.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\usercontrol.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Whatis.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.exe
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.pdb
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\resources.pri
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\AppxManifest.xml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.build.appxrecipe
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.i.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlSaveStateFile.xml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xaml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xbf
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.exe
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.pdb
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml.intermediate
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles.intermediate
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles.intermediate
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles.intermediate
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt.intermediate
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\battistelli.luca\Downloads\Tastiera Fonetica (16)\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\ProjectArchitectures.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Howtogo.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Whatis.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica NEW 8.1\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\App.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\CustomStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\StandardStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Howtogo.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Intro.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\usercontrol.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Whatis.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.xr.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.exe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.pdb
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\resources.pri
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\AppxManifest.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.build.appxrecipe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlTypeInfo.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlSaveStateFile.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.exe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.pdb
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica senza posIns\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\ProjectArchitectures.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlTypeInfo.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlSaveStateFile.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.exe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.pdb
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\App.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\CustomStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\StandardStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Howtogo.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Intro.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\usercontrol.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Whatis.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.xr.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.exe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.pdb
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\resources.pri
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\AppxManifest.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.build.appxrecipe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica edit OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\ProjectArchitectures.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\App.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\CustomStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\StandardStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Howtogo.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Intro.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\usercontrol.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Whatis.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.xr.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.exe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.pdb
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\resources.pri
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\AppxManifest.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.build.appxrecipe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlTypeInfo.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlSaveStateFile.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.exe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.pdb
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica color popup\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\ProjectArchitectures.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\App.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\CustomStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\StandardStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Howtogo.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Intro.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\usercontrol.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Whatis.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.xr.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.exe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.pdb
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\resources.pri
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\AppxManifest.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.i.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlTypeInfo.g.cs
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlSaveStateFile.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xaml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xbf
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.exe
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.pdb
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt.intermediate
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\ProjectArchitectures.txt
+C:\Luca\Scuola\Tesina\Tastiera Fonetica focus OP\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.build.appxrecipe
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\App.xbf
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\CustomStyles.xbf
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\StandardStyles.xbf
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Howtogo.xbf
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Intro.xbf
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera.xbf
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\usercontrol.xbf
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Whatis.xbf
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.xr.xml
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.exe
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.pdb
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\resources.pri
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\AppxManifest.xml
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.build.appxrecipe
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.i.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.i.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.i.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.i.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.i.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.i.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.i.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlTypeInfo.g.cs
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xaml
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xaml
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xaml
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xaml
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xaml
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xaml
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xaml
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xaml
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xbf
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xbf
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xbf
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xbf
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xbf
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xbf
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xbf
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xbf
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlSaveStateFile.xml
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.exe
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.pdb
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml.intermediate
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles.intermediate
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles.intermediate
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles.intermediate
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt.intermediate
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\ProjectArchitectures.txt
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\App.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\CustomStyles.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\StandardStyles.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Howtogo.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Intro.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\usercontrol.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Whatis.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.xr.xml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.exe
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.pdb
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\resources.pri
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\AppxManifest.xml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.build.appxrecipe
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.i.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.i.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.i.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.i.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.i.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.i.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.i.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xaml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xaml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xaml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xaml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xaml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xaml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xaml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xaml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xbf
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.exe
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.pdb
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml.intermediate
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles.intermediate
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles.intermediate
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles.intermediate
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Luca\Desktop\Luca\Scuola\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\ProjectArchitectures.txt
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\App.xbf
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\CustomStyles.xbf
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Common\StandardStyles.xbf
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Howtogo.xbf
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Intro.xbf
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera.xbf
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\usercontrol.xbf
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Whatis.xbf
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.xr.xml
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.exe
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.pdb
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\resources.pri
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\AppxManifest.xml
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\bin\Debug\Tastiera Fonetica.build.appxrecipe
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.i.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.g.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.i.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.g.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.g.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.i.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.g.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.i.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.g.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.i.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.g.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.i.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.g.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.i.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.g.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xaml
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xaml
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xaml
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xaml
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xaml
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xaml
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xaml
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xaml
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\App.xbf
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\CustomStyles.xbf
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Common\StandardStyles.xbf
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Howtogo.xbf
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Intro.xbf
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera.xbf
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\usercontrol.xbf
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Whatis.xbf
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.exe
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\Tastiera Fonetica.pdb
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\priconfig.xml.intermediate
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\layout.resfiles.intermediate
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\resources.resfiles.intermediate
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\pri.resfiles.intermediate
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Luca\Desktop\Development\Tastiera Fonetica per Windows 8.1\App\Tastiera Fonetica\Tastiera Fonetica\obj\Debug\ProjectArchitectures.txt

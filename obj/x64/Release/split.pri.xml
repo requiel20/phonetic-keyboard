@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="47313MLMdev.PhoneticKeyboard" version="1.0" primary="true">
+		<Qualifiers>
+			<Language>EN</Language>
+			<Scale>100</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Howtogo.xbf" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Howtogo.xbf">
+				<Candidate type="Path">
+					<Value>Howtogo.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Intro.xbf" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Intro.xbf">
+				<Candidate type="Path">
+					<Value>Intro.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Tastiera Fonetica.xr.xml" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Tastiera%20Fonetica.xr.xml">
+				<Candidate type="Path">
+					<Value>Tastiera Fonetica.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Tastiera.xbf" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Tastiera.xbf">
+				<Candidate type="Path">
+					<Value>Tastiera.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="usercontrol.xbf" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/usercontrol.xbf">
+				<Candidate type="Path">
+					<Value>usercontrol.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Whatis.xbf" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Whatis.xbf">
+				<Candidate type="Path">
+					<Value>Whatis.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="backs.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/backs.png">
+					<Candidate type="Path">
+						<Value>Assets\backs.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="btDx.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/btDx.png">
+					<Candidate type="Path">
+						<Value>Assets\btDx.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="btGiu.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/btGiu.png">
+					<Candidate type="Path">
+						<Value>Assets\btGiu.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="btSu.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/btSu.png">
+					<Candidate type="Path">
+						<Value>Assets\btSu.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="btSx.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/btSx.png">
+					<Candidate type="Path">
+						<Value>Assets\btSx.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="coloreFont.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/coloreFont.png">
+					<Candidate type="Path">
+						<Value>Assets\coloreFont.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="copy.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/copy.png">
+					<Candidate type="Path">
+						<Value>Assets\copy.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="cut.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/cut.png">
+					<Candidate type="Path">
+						<Value>Assets\cut.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="dimFont.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/dimFont.png">
+					<Candidate type="Path">
+						<Value>Assets\dimFont.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="fiskeyb.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/fiskeyb.png">
+					<Candidate type="Path">
+						<Value>Assets\fiskeyb.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="invio.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/invio.png">
+					<Candidate type="Path">
+						<Value>Assets\invio.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Logo.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="open.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/open.png">
+					<Candidate type="Path">
+						<Value>Assets\open.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="paste.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/paste.png">
+					<Candidate type="Path">
+						<Value>Assets\paste.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="save.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/save.png">
+					<Candidate type="Path">
+						<Value>Assets\save.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="screenCharm.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/screenCharm.png">
+					<Candidate type="Path">
+						<Value>Assets\screenCharm.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="screenFlyout.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/screenFlyout.png">
+					<Candidate type="Path">
+						<Value>Assets\screenFlyout.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="screenVuoto.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/screenVuoto.png">
+					<Candidate type="Path">
+						<Value>Assets\screenVuoto.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="shift.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/shift.png">
+					<Candidate type="Path">
+						<Value>Assets\shift.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="shiftW.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/shiftW.png">
+					<Candidate type="Path">
+						<Value>Assets\shiftW.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallLogo.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/SmallLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="square150x150Logo.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/square150x150Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\square150x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="square30x30Logo.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/square30x30Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\square30x30Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/StoreLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\StoreLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="vkeyb.png" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Assets/vkeyb.png">
+					<Candidate type="Path">
+						<Value>Assets\vkeyb.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Common">
+				<NamedResource name="CustomStyles.xbf" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Common/CustomStyles.xbf">
+					<Candidate type="Path">
+						<Value>Common\CustomStyles.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StandardStyles.xbf" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/Common/StandardStyles.xbf">
+					<Candidate type="Path">
+						<Value>Common\StandardStyles.xbf</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="mp3">
+				<NamedResource name="0042.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0042.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0042.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0047.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0047.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0047.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="004c.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/004c.mp3">
+					<Candidate type="Path">
+						<Value>mp3\004c.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0052.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0052.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0052.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0061.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0061.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0061.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0062.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0062.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0062.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0063.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0063.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0063.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0064.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0064.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0064.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0065.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0065.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0065.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0066.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0066.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0066.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0068.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0068.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0068.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0069.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0069.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0069.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="006a.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/006a.mp3">
+					<Candidate type="Path">
+						<Value>mp3\006a.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="006b.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/006b.mp3">
+					<Candidate type="Path">
+						<Value>mp3\006b.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="006c.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/006c.mp3">
+					<Candidate type="Path">
+						<Value>mp3\006c.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="006d.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/006d.mp3">
+					<Candidate type="Path">
+						<Value>mp3\006d.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="006e.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/006e.mp3">
+					<Candidate type="Path">
+						<Value>mp3\006e.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="006f.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/006f.mp3">
+					<Candidate type="Path">
+						<Value>mp3\006f.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0070.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0070.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0070.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0071.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0071.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0071.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0072.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0072.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0072.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0073.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0073.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0073.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0074.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0074.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0074.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0075.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0075.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0075.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0076.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0076.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0076.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0077.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0077.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0077.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0078.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0078.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0078.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0079.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0079.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0079.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="007a.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/007a.mp3">
+					<Candidate type="Path">
+						<Value>mp3\007a.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="00e6.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/00e6.mp3">
+					<Candidate type="Path">
+						<Value>mp3\00e6.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="00e7.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/00e7.mp3">
+					<Candidate type="Path">
+						<Value>mp3\00e7.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="00f0.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/00f0.mp3">
+					<Candidate type="Path">
+						<Value>mp3\00f0.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="00f8.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/00f8.mp3">
+					<Candidate type="Path">
+						<Value>mp3\00f8.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0127.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0127.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0127.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="014b.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/014b.mp3">
+					<Candidate type="Path">
+						<Value>mp3\014b.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0153.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0153.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0153.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0250.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0250.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0250.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0251.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0251.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0251.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0252.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0252.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0252.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0254.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0254.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0254.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0256.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0256.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0256.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0258.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0258.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0258.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0259.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0259.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0259.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="025b.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/025b.mp3">
+					<Candidate type="Path">
+						<Value>mp3\025b.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="025c.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/025c.mp3">
+					<Candidate type="Path">
+						<Value>mp3\025c.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="025e.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/025e.mp3">
+					<Candidate type="Path">
+						<Value>mp3\025e.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="025f.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/025f.mp3">
+					<Candidate type="Path">
+						<Value>mp3\025f.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0261.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0261.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0261.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0263.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0263.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0263.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0264.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0264.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0264.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0265.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0265.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0265.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0266.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0266.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0266.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0268.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0268.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0268.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="026a.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/026a.mp3">
+					<Candidate type="Path">
+						<Value>mp3\026a.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="026c.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/026c.mp3">
+					<Candidate type="Path">
+						<Value>mp3\026c.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="026d.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/026d.mp3">
+					<Candidate type="Path">
+						<Value>mp3\026d.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="026e.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/026e.mp3">
+					<Candidate type="Path">
+						<Value>mp3\026e.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="026f.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/026f.mp3">
+					<Candidate type="Path">
+						<Value>mp3\026f.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0270.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0270.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0270.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0271.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0271.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0271.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0272.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0272.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0272.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0273.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0273.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0273.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0274.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0274.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0274.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0275.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0275.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0275.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0276.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0276.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0276.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0278.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0278.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0278.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0279.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0279.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0279.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="027b.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/027b.mp3">
+					<Candidate type="Path">
+						<Value>mp3\027b.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="027d.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/027d.mp3">
+					<Candidate type="Path">
+						<Value>mp3\027d.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="027e.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/027e.mp3">
+					<Candidate type="Path">
+						<Value>mp3\027e.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0281.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0281.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0281.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0282.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0282.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0282.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0283.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0283.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0283.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0288.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0288.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0288.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0289.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0289.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0289.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="028a.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/028a.mp3">
+					<Candidate type="Path">
+						<Value>mp3\028a.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="028b.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/028b.mp3">
+					<Candidate type="Path">
+						<Value>mp3\028b.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="028c.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/028c.mp3">
+					<Candidate type="Path">
+						<Value>mp3\028c.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="028e.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/028e.mp3">
+					<Candidate type="Path">
+						<Value>mp3\028e.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="028f.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/028f.mp3">
+					<Candidate type="Path">
+						<Value>mp3\028f.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0290.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0290.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0290.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0292.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0292.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0292.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0294.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0294.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0294.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="0295.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/0295.mp3">
+					<Candidate type="Path">
+						<Value>mp3\0295.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="029d.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/029d.mp3">
+					<Candidate type="Path">
+						<Value>mp3\029d.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="02a3.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/02a3.mp3">
+					<Candidate type="Path">
+						<Value>mp3\02a3.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="02a4.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/02a4.mp3">
+					<Candidate type="Path">
+						<Value>mp3\02a4.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="02a6.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/02a6.mp3">
+					<Candidate type="Path">
+						<Value>mp3\02a6.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="02a7.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/02a7.mp3">
+					<Candidate type="Path">
+						<Value>mp3\02a7.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="03b2.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/03b2.mp3">
+					<Candidate type="Path">
+						<Value>mp3\03b2.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="03b8.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/03b8.mp3">
+					<Candidate type="Path">
+						<Value>mp3\03b8.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="03c7.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/03c7.mp3">
+					<Candidate type="Path">
+						<Value>mp3\03c7.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="2c71.mp3" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Files/mp3/2c71.mp3">
+					<Candidate type="Path">
+						<Value>mp3\2c71.mp3</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Resources">
+			<NamedResource name="consiglioTast" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/consiglioTast">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>For using this app correctly connecting a physical keyboard is recommended</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="mostraBt" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/mostraBt">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Show buttons</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="mostraLab" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/mostraLab">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Show the labels</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="nascondiBt" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/nascondiBt">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Hide buttons</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="nascondiLab" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/nascondiLab">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Hide the labels</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="scrittaAttenzione" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/scrittaAttenzione">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Attention</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="scrittaComprato" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/scrittaComprato">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Thanks for buying the full version of the Phonetic Keyboard!! To see changes restart the app</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="scrittaDocumentoWord" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/scrittaDocumentoWord">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Word document</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="scrittaGrazie" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/scrittaGrazie">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Thank you</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="scrittaImpostazioni" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/scrittaImpostazioni">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Settings</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="scrittaNewDoc" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/scrittaNewDoc">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>New phonetic keyboard document</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="scrittaNo" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/scrittaNo">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>No</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="scrittaNoIncolla" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/scrittaNoIncolla">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The content of the clipboard can't be pasted</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="scrittaPeriodoprova1" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/scrittaPeriodoprova1">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Evaluation time will end in </Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="scrittaPeriodoprova2" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/scrittaPeriodoprova2">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value> days</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="scrittaSalvato" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/scrittaSalvato">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The document has been saved</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="scrittaSi" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/scrittaSi">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Yes</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="scrittaVocaliDisattivate" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/scrittaVocaliDisattivate">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>In the trial version vowels ar disabled. Buy the full version to unlock this feature.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="scrittaVuoiSalvare" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/scrittaVuoiSalvare">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Do you want to save what you were writing?</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="beforestarting">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/beforestarting/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Before starting we need an important information</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="btNo">
+				<NamedResource name="Content" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/btNo/Content">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>No</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="btShowBt">
+				<NamedResource name="Content" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/btShowBt/Content">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Hide the buttons</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="btShowLab">
+				<NamedResource name="Content" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/btShowLab/Content">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Hide the labels</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="btSi">
+				<NamedResource name="Content" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/btSi/Content">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Yes</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="btSpazio">
+				<NamedResource name="Content" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/btSpazio/Content">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Space</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="cbPlay">
+				<NamedResource name="Content" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/cbPlay/Content">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Listen to each phone when pressing a key</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="cliccaimp1">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/cliccaimp1/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Click on settings</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="cliccaimp2">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/cliccaimp2/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Click on settings</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="doesyoursystem">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/doesyoursystem/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Does your system have a physical keyboard?</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="howtogo">
+				<NamedResource name="Content" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/howtogo/Content">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>How to go to the settings menu</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="howtogoTB">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/howtogoTB/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>How to get to the settings menu</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="ifyouchange">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/ifyouchange/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>If you change your mind this can be toggled in settings menu</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="lowerright">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/lowerright/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Move the pointer near the lower right corner of the screen, then go up</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="nellaprecedente">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/nellaprecedente/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>In the question before answer yes if your system has a physical keboard like the fris one, otherwise answer no.</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="SettingsFlyout">
+				<NamedResource name="Title" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/SettingsFlyout/Title">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Settings</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="settingsheader">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/settingsheader/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Settings</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="sistemimonitor">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/sistemimonitor/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Systems with a touchscreen monitor often aren't given with physical keyboards like this:</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="swipe">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/swipe/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>or swipe the right side of the screen</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="tbColoreFont">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/tbColoreFont/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Font Color</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="tbCopy">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/tbCopy/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Copy</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="tbCut">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/tbCut/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Cut</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="tbOpen">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/tbOpen/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Open</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="tbPaste">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/tbPaste/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Paste</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="tbSave">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/tbSave/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Save</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="tbTitoloDoc">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/tbTitoloDoc/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Untitled.doc</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="tbVirtualKeyb">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/tbVirtualKeyb/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>There is a phisical keyboard connected?</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="tsTast">
+				<NamedResource name="OffContent" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/tsTast/OffContent">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>No</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OnContent" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/tsTast/OnContent">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Yes</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="usanoinvece">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/usanoinvece/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Instead they use virtual keyboards which appears directly on the screen like this:</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="welcome">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/welcome/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>Welcome to your phonetic keyboard</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="whatis">
+				<NamedResource name="Content" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/whatis/Content">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>What is a physical keyboard</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="whatisTB">
+				<NamedResource name="Text" uri="ms-resource://47313MLMdev.PhoneticKeyboard/Resources/whatisTB/Text">
+					<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+						<Value>What is a physical keyboard?</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
